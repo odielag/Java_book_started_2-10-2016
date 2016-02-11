@@ -4,7 +4,7 @@ public class exercise1_7 {
 
 	public static void main(String[] args) {
 		// some more math
-		// I can't believe I actually created a program to being calculating pi
+		// I can't believe I actually created a program to begin calculating pi
 
 		double stuff = 1;
 		for(double i = 1;i < 1000000;i++){
