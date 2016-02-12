@@ -10,8 +10,16 @@ area = radius * radius * pi
 	 */
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
+		double radius = 5.5;
+		double perimeter = 2 * radius * Math.PI;
+		double area = radius * radius * Math.PI;
+		System.out.printf("A circle with a radius of 5.5 has"
+				+ " a perimeter of %f and an area of"
+				+ " %f", perimeter, area);
+		
 	}
 
 }
+
+//finished//
