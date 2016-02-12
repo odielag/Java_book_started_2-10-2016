@@ -1,6 +1,6 @@
 package chapter_1;
 
-public class exercise1_1 {
+public class Exercise1_1 {
 
 	public static void main(String[] args) {
 		// A simple system.out program
