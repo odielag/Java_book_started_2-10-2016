@@ -23,6 +23,27 @@ decimal point. For example, 5.0 / 4 is 1.25 and 10 / 4.0 is 2.5 .
 		int b = 4;
 		System.out.println(Math.PI / b);
 		*/
+		
+		long initialPopulation = 312032486;
+		long increasePerYear = 
+				convertSecondsPerTimeToTimesPerYear(7) +
+				convertSecondsPerTimeToTimesPerYear(13) +
+				convertSecondsPerTimeToTimesPerYear(45);	
+		for(int i = 0; i <= 5; i++){
+			System.out.println("The population in year " + i + " equals: " + 
+					(initialPopulation + i * increasePerYear));
+		}
+	}
+	
+	public static long convertSecondsPerTimeToTimesPerYear(long seconds){
+
+		long timesPerYear;
+		
+		timesPerYear = seconds * 60 * 24 * 365;
+		
+		return timesPerYear;
 	}
 
 }
+
+//finished!!//
