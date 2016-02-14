@@ -37,3 +37,6 @@ hour. (Note that 1 mile is 1.6 kilometers.)
 
 
 }
+
+//current result:
+//The runner is running at 23.040000000000006 Kilometers per hour.
