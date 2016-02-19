@@ -1,6 +1,6 @@
 package chapter_1;
 
-public class Exercise1_2 {
+public class Exercise1_2__WelcomeX3 {
 
 	public static void main(String[] args) {
 		// print out 5 lines...

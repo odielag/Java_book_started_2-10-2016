@@ -1,6 +1,6 @@
 package chapter_1;
 
-public class Exercise1_10 {
+public class Exercise1_10__ConvertSpeed {
 	
 	/*
 	 * (Average speed in miles) Assume a runner runs 14 kilometers in 45 minutes and 30

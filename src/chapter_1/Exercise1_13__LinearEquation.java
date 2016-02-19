@@ -1,6 +1,6 @@
 package chapter_1;
 
-public class Exercise1_13 {
+public class Exercise1_13__LinearEquation {
 	
 	/*
 	 * (Algebra: solve 2 * 2 linear equations) You can use Cramer’s rule to solve the fol-

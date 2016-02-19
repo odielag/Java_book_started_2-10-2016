@@ -1,6 +1,6 @@
 package chapter_1;
 
-public class Exercise1_11 {
+public class Exercise1_11__PopulationTime {
 
 	/*
 	 * (Population projection) The U.S. Census Bureau projects population based on the

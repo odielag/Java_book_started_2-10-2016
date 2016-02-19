@@ -1,6 +1,6 @@
 package chapter_1;
 
-public class Exercise1_4 {
+public class Exercise1_4__SimpleTable {
 
 	public static void main(String[] args) {
 		// This program is for outputting a table

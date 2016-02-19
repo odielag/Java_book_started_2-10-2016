@@ -1,6 +1,6 @@
 package chapter_1;
 
-public class Exercise1_12 {
+public class Exercise1_12__SpeedKphMph {
 
 	/*
 	 * (Average speed in kilometers) Assume a runner runs 24 miles in 1 hour, 40  minutes,

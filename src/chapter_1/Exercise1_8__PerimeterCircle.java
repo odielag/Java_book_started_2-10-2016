@@ -1,6 +1,6 @@
 package chapter_1;
 
-public class Exercise1_8 {
+public class Exercise1_8__PerimeterCircle {
 
 	/*
 	 * (Area and perimeter of a circle) Write a program that displays the area and perim-

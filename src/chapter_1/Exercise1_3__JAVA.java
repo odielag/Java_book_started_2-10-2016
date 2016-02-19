@@ -1,6 +1,6 @@
 package chapter_1;
 
-public class Exercise1_3 {
+public class Exercise1_3__JAVA {
 
 	public static void main(String[] args) {
 		// A graphical asci java word

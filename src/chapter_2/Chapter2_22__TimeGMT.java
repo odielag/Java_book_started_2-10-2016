@@ -1,6 +1,6 @@
 package chapter_2;
 
-public class Chapter2_22 {
+public class Chapter2_22__TimeGMT {
 
 	public static void main(String[] args) {
 		

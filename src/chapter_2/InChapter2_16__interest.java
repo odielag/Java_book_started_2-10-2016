@@ -2,7 +2,7 @@ package chapter_2;
 
 import java.util.Scanner;
 
-public class InChapter2_16 {
+public class InChapter2_16__interest {
 
 	/*
 	 * Step 1.
@@ -27,9 +27,6 @@ multiplied by the number of years.
 Step 5. Display the monthly payment and total payment.
 	 */
 
-
-
-
 	public static void main(String[] args) {
 		double loanAmount;
 		double annualInterestRate;
@@ -51,7 +48,6 @@ Step 5. Display the monthly payment and total payment.
 		loanAmount = input.nextDouble();
 		
 		input.close();
-
 
 		/*
 Step 2. The input for the annual interest rate is a number in percent format, such as

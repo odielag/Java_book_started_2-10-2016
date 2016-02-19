@@ -1,6 +1,6 @@
 package chapter_1;
 
-public class Exercise1_9 {
+public class Exercise1_9__PerimeterRectangle {
 	
 	/*
 	 * (Area and perimeter of a rectangle) Write a program that displays the area and
