@@ -10,7 +10,7 @@ number of dollars, quarters, dimes, nickels, and pennies, in this order, to resu
 mum number of coins.
 	 */
 
-	double originalAmount;
+	private static double originalAmount;
 	private static double givenAmount; //The original amount of money in *.?? format... changes
 	private static long dollarBill_100;
 	private static long dollarBill_50;
@@ -28,22 +28,19 @@ mum number of coins.
 
 		//user input
 		java.util.Scanner input = new java.util.Scanner(System.in);
-		System.out.printf("\nPlease enter the money amount ex. 50.12 ..:");
+		System.out.printf("\nPlease enter the money amount ex. 50.12 ..: ");
 		givenAmount = input.nextDouble();
 		input.close();
 
 		//process
 		change(givenAmount);
 
-		//program output
-		System.out.printf("\n100s: %d\n50s: %d\n20s: %d\n10s: %d\n5s: %d\n1s: %d" + 
-				"\nQuarters: %d\nDimes: %d\nNickels: %d\nPennies: %d", 
-				dollarBill_100, dollarBill_50, dollarBill_20, dollarBill_10,
-				dollarBill_5, dollarBill_1, quarters, dimes, nickels, pennies);
+		//output
+		print();
 	}
 
-	public void change(double givenAmount){
-		this.originalAmount = givenAmount;
+	public static void change(double givenAmount){
+		originalAmount = givenAmount;
 		dollarBill_100(givenAmount);
 
 	}
@@ -67,7 +64,7 @@ mum number of coins.
 			++dollarBill_20;
 			givenAmount -= 20;
 		}
-		dollarBill_50(givenAmount);			
+		dollarBill_10(givenAmount);			
 	};
 	public static void dollarBill_10(double givenAmount){
 		while (givenAmount >= 10){
@@ -115,9 +112,18 @@ mum number of coins.
 		while (givenAmount >= .01){
 			++pennies;
 			givenAmount -= .01;
-		}		
-	};
+		}
+	}		
+
+	public static void print(){
+		System.out.printf("\nThe original amount: %f converts to" +
+				"\n100s: %d\n50s: %d\n20s: %d\n10s: %d\n5s: %d\n1s: %d" + 
+				"\nQuarters: %d\nDimes: %d\nNickels: %d\nPennies: %d", 
+				originalAmount, dollarBill_100, dollarBill_50, dollarBill_20, dollarBill_10,
+				dollarBill_5, dollarBill_1, quarters, dimes, nickels, pennies);
+	}
 }
 
-//work in progress 
+//Finished!
+//William ODieLag Pennington
 
