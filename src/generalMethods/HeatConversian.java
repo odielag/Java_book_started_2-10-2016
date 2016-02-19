@@ -4,7 +4,7 @@ public class HeatConversian {
 	
 	public static void main(String[] args) {
 		// Testing
-		//System.out.println(CelsiusToFahrenheit(55));
+		System.out.println(CelsiusToFahrenheit(55));
 		//System.out.println(FahrenheitToCelsius(55));
 	}
 	
