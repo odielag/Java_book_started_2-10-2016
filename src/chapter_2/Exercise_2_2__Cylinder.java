@@ -1,6 +1,6 @@
 package chapter_2;
 
-public class Exercise_2_2__ {
+public class Exercise_2_2__Cylinder {
 	
 	/*
 (Compute the volume of a cylinder) Write a program that reads in the radius
