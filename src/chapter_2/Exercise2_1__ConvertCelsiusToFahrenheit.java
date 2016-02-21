@@ -13,7 +13,16 @@ Here is a sample run:
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		java.util.Scanner input = new java.util.Scanner(System.in);
+		System.out.printf("\nPlease input celsius value: \t");
+		double celsius = input.nextShort();
+		double fahrenheit;
+		fahrenheit = 9.0 / 5 * celsius + 32;
+		celsius = ((fahrenheit - 32) * 5) / 9;
+		System.out.printf("\n%f celsius is %f fahrenheit.", celsius, fahrenheit);
+		input.close();
 	}
 
 }
+
+//finished. Seems to work.
