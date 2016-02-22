@@ -21,5 +21,7 @@ public class Chapter2_22__TimeGMT {
 		currentMinute + ":" + currentSecond + " GMT");
 		
 	}
+	
+	//public static long showGMTOffset
 
 }

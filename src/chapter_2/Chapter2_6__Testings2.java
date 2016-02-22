@@ -1,5 +1,7 @@
 package chapter_2;
 
+import getGmtPlus;
+
 public class Chapter2_6__Testings2 {
 
 	public static void main(String[] args) {
@@ -38,6 +40,8 @@ public class Chapter2_6__Testings2 {
 		//System.out.printf(123_456e12 + "\n");
 		//Result:
 		//1.23456E17
+		
+		getGmtPlus(1);
 	}
 
 }
