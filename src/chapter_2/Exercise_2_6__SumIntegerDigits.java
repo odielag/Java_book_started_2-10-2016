@@ -1,6 +1,6 @@
 package chapter_2;
 
-public class Exercise_2_6__ {
+public class Exercise_2_6__SumIntegerDigits {
 	
 	/*
 (Sum the digits in an integer) Write a program that reads an integer between 0 and
