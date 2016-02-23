@@ -1,6 +1,6 @@
 package chapter_2;
 
-public class Exercise_2_16__ {
+public class Exercise_2_16__Hexagon {
 	
 	/*
 (Geometry: area of a hexagon) Write a program that prompts the user to enter the
