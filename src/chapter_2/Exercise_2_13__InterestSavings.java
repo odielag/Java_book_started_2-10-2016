@@ -1,6 +1,6 @@
 package chapter_2;
 
-public class Exercise_2_13__ {
+public class Exercise_2_13__InterestSavings {
 	
 	/*
 (Financial application: compound value) Suppose you save $100 each month
