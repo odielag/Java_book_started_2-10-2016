@@ -21,6 +21,8 @@ The area of the triangle is 33.6
 	
 	public static void main(String[] args) {
 		
+
+		
 		// input
 		System.out.printf("Enter three points for a triangle: ");
 		java.util.Scanner input = new java.util.Scanner(System.in);
@@ -33,12 +35,18 @@ The area of the triangle is 33.6
 		input.close();
 		
 		// processing
-		
-		
+		side1 = Math.sqrt((x2 - x1) - (y2 - y1));
+		side1 = Math.sqrt((x3 - x2) - (y3 - y2));
+		side1 = Math.sqrt((x1 - x3) - (y1 - y3));
+		s = (side1 + side2 + side3) / 2;
+		area =  Math.pow((s * (s - side1) * (s - side2) * (s - side3)), 0.5);
 		
 		// output
-		
+		System.out.printf("The area of the triangle is %d", area);
+
 	}
 
 }
+
+// I don't know why this program isn't working.
 
