@@ -1,6 +1,6 @@
 package chapter_2;
 
-public class InChapter_2_17__ChangingMoney {
+public class InChapter_2_10__ChangingMoney {
 
 	/*
 Suppose you want to develop a program that changes a given amount of money into smaller
