@@ -1,6 +1,6 @@
 package chapter_2;
 
-public class Exercise_2_20__ {
+public class Exercise_2_20__InterestRate {
 	
 	/*
 (Financial application: calculate interest) If you know the balance and the annual
