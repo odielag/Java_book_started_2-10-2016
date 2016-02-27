@@ -22,6 +22,6 @@ public class CheckPoint_3_3__ {
 		i = 1;
 		b = (boolean)i;
 	 */
-	}
+	
 
 }
