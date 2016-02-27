@@ -1,6 +1,6 @@
 package chapter_2;
 
-public class Exercise_2_23__ {
+public class Exercise_2_23__DrivingDistanceCost {
 	
 	/*
 (Cost of driving) Write a program that prompts the user to enter the distance to
