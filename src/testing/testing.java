@@ -19,6 +19,12 @@ Java does not let you convert a double to a float because of the loss
 of precision.
 		 */
 		
+		/*
+		System.out.println(Math.pow(10, -14));
+		System.out.println(Double.MIN_VALUE);
+		*/
+		// Got to page 85
+		
 	}
 	
 }
