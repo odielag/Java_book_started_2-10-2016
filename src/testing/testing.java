@@ -6,10 +6,10 @@ public class testing {
 		// TODO Auto-generated method stub
 
 		//System.out.println(Integer.MAX_VALUE);
-		
-	    //int n = 10000 * 10000 * 10000;
-	    //System.out.println("n is " + n);
-		
+
+		//int n = 10000 * 10000 * 10000;
+		//System.out.println("n is " + n);
+
 		//float x = 1.0f;
 		//System.out.println(x);
 		/*
@@ -18,13 +18,52 @@ defaults to a double, which is more precise than a float. And by default,
 Java does not let you convert a double to a float because of the loss 
 of precision.
 		 */
-		
+
 		/*
 		System.out.println(Math.pow(10, -14));
 		System.out.println(Double.MIN_VALUE);
-		*/
+		 */
 		// Got to page 85
+
+		// Page 87
+		/* 3.13
+		int age = 16;
+		if (age < 16)
+			System.out.println
+				("Cannot get a driver's license");
+		if (age >= 16)
+			System.out.println
+				("Can get a driver's license");
+		//Can get a driver's license
+		 */
+
+		/*
+		// 3.14a
+		int[] number = {14, 15, 30};
+		for (int i = 0; i < 3; i++){
+			if (number[i] % 2 == 0)
+				System.out.println
+					(number[i] + " is even");
+			if (number[i] % 5 == 0)
+				System.out.println
+					(number[i] + " is multiple of 5");
+		}
+		*/
+		
+		/*
+		// 3.14b
+		int[] number = {14, 15, 30};
+		for (int i = 0; i < 3; i++){
+			if (number[i] % 2 == 0)
+				System.out.println
+					(number[i] + " is even");
+			else
+				System.out.println
+					(number[i] + " is multiple of 5");
+		}
+		// The result of 1.14b is not correct
+		*/
 		
 	}
-	
+
 }
