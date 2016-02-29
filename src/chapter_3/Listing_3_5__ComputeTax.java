@@ -3,6 +3,14 @@ package chapter_3;
 import java.util.Scanner;
 
 public class Listing_3_5__ComputeTax {
+	
+	/*		EXAMPLE RESULT
+	(0-single filer, 1-married jointly or qualifying widow(er),
+	2-married separately, 3-head of household)
+	Enter the filing status: 0
+	Enter the taxable income: 400000
+	Tax is 117683.5
+	 */
 
 	public static void main(String[] args) {
 		
@@ -24,14 +32,6 @@ public class Listing_3_5__ComputeTax {
 			{11950, 45500, 117450, 190200, 372950, Long.MAX_VALUE}};
 		
 		// input
-			/*		EXAMPLE RESULT
-			(0-single filer, 1-married jointly or qualifying widow(er),
-			2-married separately, 3-head of household)
-			Enter the filing status: 0
-			Enter the taxable income: 400000
-			Tax is 117683.5
-			 */
-			
 		System.out.printf("(0-single filer, 1-married jointly or qualifying widow(er),\n");
 		System.out.printf("2-married separately, 3-head of household)\n");
 		System.out.printf("Enter the filing status: ");
