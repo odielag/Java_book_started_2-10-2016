@@ -64,6 +64,8 @@ of precision.
 		// The result of 1.14b is not correct
 		*/
 		
+		System.out.println(Long.MAX_VALUE);
+		
 	}
 
 }
