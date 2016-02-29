@@ -92,3 +92,5 @@ public class Listing_3_5__ComputeTax {
 	}
 
 }
+
+// Finished by William ODieLag Pennington on Feb 29, 2016;
