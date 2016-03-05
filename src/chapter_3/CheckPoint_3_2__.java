@@ -60,7 +60,7 @@ Thursday, Friday, Saturday, if day is 0 , 1 , 2 , 3 , 4 , 5 , 6 , accordingly.
 			default: System.exit(1);
 		}
 		// output
-		System.out.printf("\n%s", output);
+		System.out.printf("%s", output);
 	}
 	
 }
