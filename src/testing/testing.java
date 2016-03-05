@@ -64,7 +64,13 @@ of precision.
 		// The result of 1.14b is not correct
 		*/
 		
-		System.out.println(Long.MAX_VALUE);
+		//System.out.println(Long.MAX_VALUE);
+		
+		/*
+		int x = 0;
+		if (x < 100) && (x > 10)
+		  System.out.println("x is between 10 and 100");
+		  */
 		
 	}
 
