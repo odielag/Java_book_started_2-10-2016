@@ -1,6 +1,6 @@
 package chapter_3;
 
-public class Exercise_3_3__ {
+public class Exercise_3_3__LinearEquations {
 	
 	/*
 (Algebra: solve 2 * 2 linear equations) A linear equation can be solved using
@@ -39,6 +39,7 @@ The equation has no solution
 			double y = (a*f - e*c) / (a*d - b*c);
 			out = String.format("x is %.1f and y is %.1f", x, y);
 		}
+		
 		// output
 		System.out.println(out);
 		
