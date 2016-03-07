@@ -2,7 +2,7 @@ package chapter_3;
 
 import java.util.Scanner;
 
-public class Exercise_3_2__ {
+public class Exercise_3_2__AddThreeNumbers {
 	
 	/*
 (Game: add three numbers) The program in Listing 3.1, AdditionQuiz.java, gen-
