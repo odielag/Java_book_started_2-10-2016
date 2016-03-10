@@ -14,7 +14,6 @@ and display the integers in non-decreasing order.
 		int[] integer = new int[numberOfIntegers];
 		int temp;
 
-
 		java.util.Scanner input = new java.util.Scanner(System.in);
 		System.out.println(numberOfIntegers + " integers: ");
 		for (int i = 0; i < numberOfIntegers; i++){
@@ -45,7 +44,7 @@ and display the integers in non-decreasing order.
 		System.out.printf("The sorted integers are: ");
 		for (int i = 0; i < integer.length; i++)
 			System.out.printf("%d ", integer[i]);
-
 	}
-
 }
+
+// Finished by William ODieLag Pennington as of 3/8/2016;
