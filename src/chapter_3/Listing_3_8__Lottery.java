@@ -1,6 +1,6 @@
 package chapter_3;
 
-public class CaseStudy_3_12__Lottery {
+public class Listing_3_8__Lottery {
 
 	/*
 Suppose you want to develop a program to play lottery. The program randomly generates a
