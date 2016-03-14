@@ -1,3 +1,4 @@
+package chapter_3;
 
 public class Exercise_3_7__MonetaryUnits {
 

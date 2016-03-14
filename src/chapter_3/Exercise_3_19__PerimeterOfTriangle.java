@@ -1,5 +1,6 @@
+package chapter_3;
 
-public class Exercise_3_20__WindChillTemperature {
+public class Exercise_3_19__PerimeterOfTriangle {
 	
 	/*
 (Compute the perimeter of a triangle) Write a program that reads three edges for
