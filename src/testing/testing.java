@@ -72,6 +72,9 @@ of precision.
 		  System.out.println("x is between 10 and 100");
 		  */
 		
+		//System.out.print(Math.max(2.5, 3));
+		
+		
 	}
 
 }
