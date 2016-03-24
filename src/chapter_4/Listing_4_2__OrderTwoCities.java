@@ -21,8 +21,10 @@ alphabetical order.
 		input.close();
 		
 		// processing
-		if(city0.compareTo(city1) < 0) output = "The cities are in alphabetical order";
-		else output = "The cities are not in alphabetical order";
+		if(city0.compareTo(city1) < 0) output = 
+				String.format("The cities in alphabetical order are \"%s\" and \"%s\"", city0, city1);
+		else output = 
+				String.format("The cities in alphabetical order are \"%s\" and \"%s\"", city1, city0);
 		
 		// ourput
 		System.out.println(output);
