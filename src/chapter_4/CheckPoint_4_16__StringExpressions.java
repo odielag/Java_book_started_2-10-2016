@@ -1,6 +1,6 @@
 package chapter_4;
 
-public class CheckPoint_3_16__StringExpressions {
+public class CheckPoint_4_16__StringExpressions {
 	
 	/*
 4.16
