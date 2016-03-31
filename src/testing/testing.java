@@ -74,7 +74,8 @@ of precision.
 		
 		//System.out.print(Math.max(2.5, 3));
 		
-		
+		//String s = "More than ten chars long";
+		//System.out.printf("%10s", s);
 	}
 
 }
