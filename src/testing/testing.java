@@ -76,6 +76,10 @@ of precision.
 		
 		//String s = "More than ten chars long";
 		//System.out.printf("%10s", s);
+		
+		//System.out.println((int)(char)4);
+		
+		
 	}
 
 }
