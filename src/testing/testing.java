@@ -48,8 +48,8 @@ of precision.
 				System.out.println
 					(number[i] + " is multiple of 5");
 		}
-		*/
-		
+		 */
+
 		/*
 		// 3.14b
 		int[] number = {14, 15, 30};
@@ -62,24 +62,28 @@ of precision.
 					(number[i] + " is multiple of 5");
 		}
 		// The result of 1.14b is not correct
-		*/
-		
+		 */
+
 		//System.out.println(Long.MAX_VALUE);
-		
+
 		/*
 		int x = 0;
 		if (x < 100) && (x > 10)
 		  System.out.println("x is between 10 and 100");
-		  */
-		
+		 */
+
 		//System.out.print(Math.max(2.5, 3));
-		
+
 		//String s = "More than ten chars long";
 		//System.out.printf("%10s", s);
-		
+
 		//System.out.println((int)(char)4);
-		
-		
+
+		double i = 1.0000;
+		while(i < 1.01){
+			System.out.printf("When i = %.2f%%, APR = %.1f%%\n", (i - 1) * 100, (Math.pow(i, 180) - 1) * 100);
+			i += 0.0001;
+		}
 	}
 
 }

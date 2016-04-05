@@ -56,6 +56,16 @@ The area of the triangle is 33.6
 
 	}
 
+	public static double TriangleCoords(double a, double b, double c){
+		side1 = a;
+		side2 = b;
+		side3 = c;
+
+		s = (side1 + side2 + side3) / 2;
+
+		return Math.sqrt(s * (s - side1) * (s - side2) * (s - side3));
+	}
+	
 }
 
 // Finished by William ODieLag Pennington
