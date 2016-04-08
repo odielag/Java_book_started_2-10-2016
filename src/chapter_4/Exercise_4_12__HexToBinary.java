@@ -18,9 +18,9 @@ G is an invalid input
 	public static void main(String[] args) {
 		
 		// input
-		String digit;
-		int number;
-		Boolean[] binary = new Boolean[4];
+		String digit;		// The raw input of the user
+		int number;			// The numeric value of the user's input
+		Boolean[] binary = new Boolean[4];	// Used to arrange the boolean values
 		
 		
 		System.out.print("Enter a hex digit: ");
@@ -29,8 +29,10 @@ G is an invalid input
 		input.close();
 		
 		// processing
-		number = digit.compareTo("0");
+		number = digit.compareTo("0");			// measures the input distance from zero
 		
+		
+		// Here I'm making sure that the numbers are the right values
 		if (number >= 17 && 22 >= number)
 			number -= 7;
 		else if (number >= 0 && 9 >= number)
@@ -38,6 +40,9 @@ G is an invalid input
 		else
 			System.out.print("The number is out'a whack.");
 		
+		// I could use System.out... with Integer.toBinaryString()... to finish here.
+		
+		// here the for loop makes the int value go into the boolean array in order.
 		for (int i = 0; i < binary.length; i++) {
 			if (number >= Math.pow(2, (binary.length - i - 1))) {
 				binary[i] = true;
@@ -48,6 +53,8 @@ G is an invalid input
 		}
 	
 		// output
+		
+		// This takes the boolean array and prints 1s or 0s to make the binary output.
 		System.out.print("The binary value is ");
 		for (int i = 0; i < binary.length; i++) {
 			int output;
@@ -62,3 +69,6 @@ G is an invalid input
 	}
 
 }
+
+// Notes: If I had used Integer.toBinaryString() things would have been easier.
+// Completed (for now) on 4/8/2016 by William ODieLag Pennington;
