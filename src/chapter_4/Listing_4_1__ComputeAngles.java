@@ -21,13 +21,15 @@ The three angles are 15.26 90.0 74.74
 
 	 */
 
-	public static void main(String[] args){
+	public static String ComputeAngles
+	(double x0, double y0, double x1, double y1, double x2, double y2){
 
 		// input
 		double a, b, c;		/// The three line lengths from a triangle
 		double A, B, C;		/// The angle of a corner with the same triangle
-		double x0, y0, x1, y1, x2, y2;		/// The user inputed points of the triangle
+		// double x0, y0, x1, y1, x2, y2;		/// The user inputed points of the triangle
 
+		/*		turning this into a method
 		System.out.print("Enter the coordinates of three points separated "
 				+ "by spaces like x1 y1 x2 y2 x3 y3: ");
 		java.util.Scanner input = new java.util.Scanner(System.in);
@@ -38,6 +40,7 @@ The three angles are 15.26 90.0 74.74
 		x2 = input.nextDouble();
 		y2 = input.nextDouble();
 		input.close();
+		*/
 
 		// processing
 		//// lineLength... 
@@ -51,7 +54,7 @@ The three angles are 15.26 90.0 74.74
 		C = Math.toDegrees(Math.acos((c * c - b * b - a * a) / (-2 * a * b)));
 
 		// output
-		System.out.printf("Three angles of the triangle: %.2f, %.2f, %.2f", A, B, C);
+		return String.format("Three angles of the triangle: %.2f, %.2f, %.2f", A, B, C);
 
 	}
 
@@ -62,3 +65,4 @@ The three angles are 15.26 90.0 74.74
 }
 
 // Completed by William ODieLag Pennington on 3/20/2016;
+// Modified by same guy to make it into a method on 4/8/2016;
