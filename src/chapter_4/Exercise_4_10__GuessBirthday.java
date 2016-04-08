@@ -2,7 +2,13 @@ package chapter_4;
 
 import java.util.Scanner;
 
-public class Listing_4_3__GuessBirthday {
+public class Exercise_4_10__GuessBirthday {
+	
+	/*
+(Guess birthday) Rewrite Listing 4.3, GuessBirthday.java, to prompt the user to
+enter the character Y for Yes and N for No rather than entering 1 for Yes and 0
+for No.
+	 */
 
 	public static void main(String[] args){
 		
@@ -44,46 +50,46 @@ public class Listing_4_3__GuessBirthday {
 		// Prompt the user to answer questions
 		System.out.print("Is your birthday in Set1?\n");
 		System.out.print(set1);
-		System.out.print("\nEnter 0 for No and 1 for Yes: ");
-		int answer = input.nextInt();
+		System.out.print("\nEnter No or Yes: ");
+		String answer = input.nextLine();
 		
-		if (answer == 1)
+		if (answer.equalsIgnoreCase("yes"))
 			day += 1;
 		
 		// Prompt the user to answer questions
 		System.out.print("Is your birthday in Set2?\n");
 		System.out.print(set2);
-		System.out.print("\nEnter 0 for No and 1 for Yes: ");
-		answer = input.nextInt();
+		System.out.print("\nEnter No or Yes: ");
+		answer = input.nextLine();
 		
-		if (answer == 1)
+		if (answer.equalsIgnoreCase("yes"))
 			day += 2;
 		
 		// Prompt the user to answer questions
 		System.out.print("Is your birthday in Set3?\n");
 		System.out.print(set3);
-		System.out.print("\nEnter 0 for No and 1 for Yes: ");
-		answer = input.nextInt();
+		System.out.print("\nEnter No or Yes: ");
+		answer = input.nextLine();
 		
-		if (answer == 1)
+		if (answer.equalsIgnoreCase("yes"))
 			day += 4;
 		
 		// Prompt the user to answer questions
 		System.out.print("Is your birthday in Set4?\n");
 		System.out.print(set4);
-		System.out.print("\nEnter 0 for No and 1 for Yes: ");
-		answer = input.nextInt();
+		System.out.print("\nEnter No or Yes: ");
+		answer = input.nextLine();
 		
-		if (answer == 1)
+		if (answer.equalsIgnoreCase("yes"))
 			day += 8;
 		
 		// Prompt the user to answer questions
 		System.out.print("Is your birthday in Set5?\n");
 		System.out.print(set5);
-		System.out.print("\nEnter 0 for No and 1 for Yes: ");
-		answer = input.nextInt();
+		System.out.print("\nEnter No or Yes: ");
+		answer = input.nextLine();
 		
-		if (answer == 1)
+		if (answer.equalsIgnoreCase("yes"))
 			day += 16;
 		
 		System.out.println("\nYour birthday is " + day + "!");
