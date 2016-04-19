@@ -14,17 +14,17 @@ using the indexOf and substring methods.
 
 	private static String originalAmount;
 	private static String givenAmount; //The original amount of money in *.?? format... changes
-	private static long dollarBill_100;
-	private static long dollarBill_50;
-	private static long dollarBill_20;
-	private static long dollarBill_10;
-	private static long dollarBill_5;
-	private static long dollarBill_1;
+	private static int dollarBill_100;
+	private static int dollarBill_50;
+	private static int dollarBill_20;
+	private static int dollarBill_10;
+	private static int dollarBill_5;
+	private static int dollarBill_1;
 	//testing// System.out.println(Byte.MAX_VALUE);
-	private static byte quarters;
-	private static byte dimes;
-	private static byte nickels;
-	private static byte pennies;
+	private static int quarters;
+	private static int dimes;
+	private static int nickels;
+	private static int pennies;
 
 	public static void main(String[] args) {
 
@@ -37,11 +37,11 @@ using the indexOf and substring methods.
 		//process
 		change(givenAmount);
 		
-		/*// debug
+		// debug
 		System.out.println(givenAmount);
 		System.out.println((Double.parseDouble(givenAmount.substring(0, givenAmount.length() - 1 - 2))));
-		System.out.println((Double.parseDouble(givenAmount.substring(givenAmount.length() - 1 - 2, givenAmount.length()))));
-		*/
+		System.out.println((Double.parseDouble(givenAmount.substring(givenAmount.length() - 2, givenAmount.length()))));
+		
 		
 		
 
@@ -56,76 +56,76 @@ using the indexOf and substring methods.
 	}
 	
 	public static void fromStringToDollarsAndCents(String givenAmount) {
-	dollarBill_100(Double.parseDouble(givenAmount.substring(0, givenAmount.length() - 3)));
-	quarters(Double.parseDouble(givenAmount.substring(givenAmount.length() -3, givenAmount.length() - 1)));
+	dollarBill_100(Integer.parseInt(givenAmount.substring(0, givenAmount.length() - 3)));
+	quarters(Integer.parseInt(givenAmount.substring(givenAmount.length() -2, givenAmount.length())));
 	}
 
-	public static void dollarBill_100(double givenAmount){
+	public static void dollarBill_100(int givenAmount){
 		while (givenAmount >= 100){
 			++dollarBill_100;
 			givenAmount -= 100;
 		}
 		dollarBill_50(givenAmount);			
 	};
-	public static void dollarBill_50(double givenAmount){
+	public static void dollarBill_50(int givenAmount){
 		while (givenAmount >= 50){
 			++dollarBill_50;
 			givenAmount -= 50;
 		}
 		dollarBill_20(givenAmount);			
 	};
-	public static void dollarBill_20(double givenAmount){
+	public static void dollarBill_20(int givenAmount){
 		while (givenAmount >= 20){
 			++dollarBill_20;
 			givenAmount -= 20;
 		}
 		dollarBill_10(givenAmount);			
 	};
-	public static void dollarBill_10(double givenAmount){
+	public static void dollarBill_10(int givenAmount){
 		while (givenAmount >= 10){
 			++dollarBill_10;
 			givenAmount -= 10;
 		}
 		dollarBill_5(givenAmount);			
 	};
-	public static void dollarBill_5(double givenAmount){
+	public static void dollarBill_5(int givenAmount){
 		while (givenAmount >= 5){
 			++dollarBill_5;
 			givenAmount -= 5;
 		}
 		dollarBill_1(givenAmount);			
 	};
-	public static void dollarBill_1(double givenAmount){
+	public static void dollarBill_1(int givenAmount){
 		while (givenAmount >= 1){
 			++dollarBill_1;
 			givenAmount -= 1;
 		};			
 	};
-	public static void quarters(double givenAmount){
-		while (givenAmount >= .25){
+	public static void quarters(int givenAmount){
+		while (givenAmount >= 25){
 			++quarters;
-			givenAmount -= .25;
+			givenAmount -= 25;
 		}
 		dimes(givenAmount);			
 	};
-	public static void dimes(double givenAmount){
-		while (givenAmount >= .10){
+	public static void dimes(int givenAmount){
+		while (givenAmount >= 10){
 			++dimes;
-			givenAmount -= .10;
+			givenAmount -= 10;
 		}
 		nickels(givenAmount);			
 	};
-	public static void nickels(double givenAmount){
-		while (givenAmount >= .05){
+	public static void nickels(int givenAmount){
+		while (givenAmount >= 05){
 			++nickels;
-			givenAmount -= .05;
+			givenAmount -= 05;
 		}
 		pennies(givenAmount);			
 	};
-	public static void pennies(double givenAmount){
-		while (givenAmount >= .01){
+	public static void pennies(int givenAmount){
+		while (givenAmount >= 01){
 			++pennies;
-			givenAmount -= .01;
+			givenAmount -= 01;
 		}
 	}		
 
