@@ -2,7 +2,7 @@ package chapter_3;
 
 import java.util.Scanner;
 
-public class Chapter_3_1__AdditionQuiz {
+public class Listing_3_1__AdditionQuiz {
 
 	public static void main(String[] args) {
 		
