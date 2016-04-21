@@ -16,6 +16,7 @@ public class Listing_3_1__AdditionQuiz {
 				"What is " + number1 + " + " + number2 + "? ");
 
 		int number = input.nextInt();
+		input.close();
 		
 		System.out.println(
 				number1 + " + " + number2 + " = " + number + " is " +
