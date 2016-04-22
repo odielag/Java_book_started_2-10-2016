@@ -22,7 +22,6 @@ public class Listing_5_6__TestDoWhile {
 					"Enter an integer (the input ends if it is 0): ");
 			data = input.nextInt();
 		} while (data != 0);
-		
 		System.out.println("The sum is " + sum);
 		
 		input.close();
