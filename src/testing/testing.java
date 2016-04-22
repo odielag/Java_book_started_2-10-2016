@@ -162,7 +162,59 @@ initial-action
 loop-continuation-condition
 action-after-each-iteration
 		 */
-
+		
+		/*
+		for ( ; ; )
+		{
+			System.out.println("Testing...");
+		}
+		 */ // yep, looped forever.
+		
+		/*
+		int count = 0;
+		int n = 100;
+		while (count < n)
+		{
+			count++;
+		}
+		System.out.println(count);
+		// output: 100
+		*/
+		
+		/*
+		int n = 100;
+		for (int count = 0; count <= n; count++)
+		{
+			System.out.println(count);
+		}
+		// outputish: 100
+		*/
+		
+		/*
+		int count = 5;
+		int n = 100;
+		while (count < n)
+		{
+			count++;
+		}
+		// my guess... count = 100
+		System.out.println(count);
+		// yep
+		*/
+		
+		/*		
+		int count = 5;
+		int n = 100;
+		while (count < n)
+		{
+			count += 3;
+		}
+		// I think count will be at 98 when the loop ends.
+		System.out.println(count);
+		// I was wrong, it is 101 : ).
+		*/
+		
+		
 	}
 
 }
