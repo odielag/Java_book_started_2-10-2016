@@ -123,6 +123,46 @@ of precision.
 		System.out.println("x is " + x);
 		 */
 
+		/*
+		int i;
+		for (i = 0; i < 5; ++i)
+		{
+			System.out.println(i);
+		}
+		System.out.println(i);
+		 */
+
+		/*
+		int sum = 0;
+		for (int i = 0; i < 10; ++i) {
+			sum += i;
+			}
+		System.out.println(sum);
+
+		Scanner input = new Scanner(System.in);
+		System.out.println("Please enter a number then a space or enter key to continue");
+		String pause = input.next();
+
+		sum = 0;
+		for (int i = 0; i < 10; i++) {
+			sum += i;
+			}
+		System.out.println(sum);
+		 */
+
+		/*
+	Check Point 5.9 What are the three parts of a for loop control?
+control variable
+continue condition
+control variable iterration
+(my guesses)
+
+answers:
+initial-action
+loop-continuation-condition
+action-after-each-iteration
+		 */
+
 	}
 
 }
