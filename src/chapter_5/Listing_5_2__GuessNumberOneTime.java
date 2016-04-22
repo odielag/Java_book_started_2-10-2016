@@ -36,12 +36,12 @@ Yes, the number is 39
 			System.out.print("Enter your guess: ");
 			guess = input.nextInt();
 			if (guess > number) System.out.println("Your guess is too high");
-			if (guess < number) System.out.println("Your guess is too low");
-			if (guess == number) System.out.println("Yes, the number is " + number);
+			else if (guess < number) System.out.println("Your guess is too low");
+			else if (guess == number) System.out.println("Yes, the number is " + number);
+			else System.out.println("What happened???");
 		}
 		input.close();
 	}
-
 }
 
 // Completed on 4/21/2016;
