@@ -2,7 +2,7 @@ package chapter_5;
 
 public class KeyPoint_5_17
 {
-	public void main(String[] args)
+	public static void main(String[] args)
 	{
 		int sum = 0;
 		int j = 0;
