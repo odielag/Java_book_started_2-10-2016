@@ -67,7 +67,7 @@ The program can work as follows:
 		Scanner input = new Scanner(System.in);
 		String[] stringCorrect = new String[5];
 
-		
+
 		startTimeMS = System.currentTimeMillis();
 		for (int i = 0; i < 5; i++) {
 			//1. Generate two single-digit integers into number1 and number2 .
@@ -86,30 +86,24 @@ The program can work as follows:
 			// processing
 			//4. Check the student’s answer
 			correct[i] = (number1[i] - number2[i] == userAnswer[i]);
-			
-			if (number1[i] - number2[i] == userAnswer[i])
-				stringCorrect[i] = "correct";
-			else 
-				stringCorrect[i] = "incorrect";
 
+			// Assign stringCorrect[i] a string of correct or incorrect based on correct[i]
+			stringCorrect[i] = (correct[i]) ? "correct":"incorrect";
+			
 			// output
+			if (correct[i] == true) correctCount++;
+			
 			//...display whether the answer is correct.
-			if (correct[i]) {
-				System.out.printf
-				("%d-%d=%d is %s\n\n", number1[i], number2[i], userAnswer[i], "correct!");
-				correctCount++;
-			}
-			else { 
-				System.out.printf
-				("%d-%d=%d is %s\n%d – %d should be %d\n\n",
-						number1[i], number2[i], userAnswer[i], "wrong.",
-						number1[i], number2[i], number1[i] - number2[i]);
-			}
+			System.out.printf("%d-%d=%d is %s\n\n", 
+					number1[i], number2[i], userAnswer[i], stringCorrect[i]);
+
 		}
+
 		System.out.println("Correct count is " + correctCount);
 		endTimeMS = System.currentTimeMillis();
-		System.out.printf("Test time is %d seconds\n\n", (int)((endTimeMS - startTimeMS) / 1000));
-		
+		System.out.printf("Test time is %d seconds\n\n",
+				(int)((endTimeMS - startTimeMS) / 1000));
+
 		for (int i = 0; i < number1.length; i++)
 			System.out.printf("%d-%d=%d %s\n", 
 					number1[i], number2[i], number1[i] - number2[i], stringCorrect[i]);
