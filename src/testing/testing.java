@@ -1,5 +1,7 @@
 package testing;
 
+import java.util.Scanner;
+
 public class testing {
 
 	public static void main(String[] args) {
@@ -80,17 +82,47 @@ of precision.
 		//System.out.println((int)(char)4);
 
 		//	micro-percents-apr
-		
+
+		/*
 		double i = 1.0000;
 		while(i < 1.01){
-			System.out.printf("When i = %.2f%%, APR = %.1f%%\n", (i - 1) * 100, (Math.pow(i, 360) - 1) * 100);
+			System.out.printf("When i = %.2f%%, APR = %.1f%%\n", 
+					(i - 1) * 100, (Math.pow(i, 360) - 1) * 100);
 			i += 0.0001;
 		}
-		
-		
+		 */
+
 		//System.out.print("Basdfasd".compareTo("0asdfasdfdf"));
 		//System.out.print("aoasef".compareTo("alkjasdf"));
-		
+
+		/*
+		int i = 1;
+		while (i < 10)
+			if ((i++) % 2 == 0)
+				System.out.println(i);
+		 */
+
+		/*
+		Scanner input = new Scanner(System.in);
+		int number, max;
+		number = input.nextInt();
+		max = number;
+		while (number != 0) {
+			number = input.nextInt();
+			if (number > max)
+				max = number;
+		}
+		System.out.println("max is " + max);
+		System.out.println("number " + number);
+		 */
+
+		/*
+		int x = 80000000;
+		while (x > 0)
+			x++;
+		System.out.println("x is " + x);
+		 */
+
 	}
 
 }
