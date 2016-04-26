@@ -162,14 +162,14 @@ initial-action
 loop-continuation-condition
 action-after-each-iteration
 		 */
-		
+
 		/*
 		for ( ; ; )
 		{
 			System.out.println("Testing...");
 		}
 		 */ // yep, looped forever.
-		
+
 		/*
 		int count = 0;
 		int n = 100;
@@ -179,8 +179,8 @@ action-after-each-iteration
 		}
 		System.out.println(count);
 		// output: 100
-		*/
-		
+		 */
+
 		/*
 		int n = 100;
 		for (int count = 0; count <= n; count++)
@@ -188,8 +188,8 @@ action-after-each-iteration
 			System.out.println(count);
 		}
 		// outputish: 100
-		*/
-		
+		 */
+
 		/*
 		int count = 5;
 		int n = 100;
@@ -200,8 +200,8 @@ action-after-each-iteration
 		// my guess... count = 100
 		System.out.println(count);
 		// yep
-		*/
-		
+		 */
+
 		/*		
 		int count = 5;
 		int n = 100;
@@ -212,9 +212,95 @@ action-after-each-iteration
 		// I think count will be at 98 when the loop ends.
 		System.out.println(count);
 		// I was wrong, it is 101 : ).
-		*/
-		
-		
-	}
+		 */
 
+		/*
+		5.18a
+			line 8 should read:
+				while (i < 10);
+			instead of:
+				while (i < 10)
+
+		5.18b
+			line 3 should read:
+				for (int i = 0; i < 10; i++)
+			instead of"
+				for (int i = 0; i < 10; i++);
+		 */
+
+
+		/*
+		for (int i = 1; i < 5; i++) {
+			int j = 0;
+			while (j < i) {
+				System.out.print(j + " ");
+				j++;
+			}
+		}
+		 */
+		//0 0 1 0 1 2 0 1 2 3 
+
+		/*
+		int i = 0;
+		while (i < 5) {
+			for (int j = i; j > 1; j--)
+				System.out.print(j + " ");
+			System.out.println("****");
+			i++;
+		}
+		 */
+		/*	//expected results
+		 ****
+		 ****
+		2 ****
+		3 2 ****
+		4 3 2 ****
+		 */	// I was correct!
+
+		/*
+		int i = 5;
+		while (i >= 1) {
+			int num = 1;
+			for (int j = 1; j <= i; j++) {
+				System.out.print(num + "xxx");
+				num *= 2;
+			}
+
+			System.out.println();
+			i--;
+		}
+		 */
+		/*
+		1xxx2xxx4xxx8xxx16xxx
+		1xxx2xxx4xxx8xxx
+		1xxx2xxx4xxx
+		1xxx2xxx
+		1xxx
+
+		 */		// I was correct!
+		/*
+		int i = 1;
+		do {
+			int num = 1;
+			for (int j = 1; j <= i; j++) {
+				System.out.print(num + "G");
+				num += 2;
+			}
+
+			System.out.println();
+			i++;
+		} while (i <= 5);
+		*/
+		/*
+		1G
+		1G3G
+		1G3G5G
+		1G3G5G7G
+		1G3G5G7G9G
+		
+		 */		// I was wrong. Wasn't num being multiplied... was being added. (changing).
+
+
+
+	}
 }
