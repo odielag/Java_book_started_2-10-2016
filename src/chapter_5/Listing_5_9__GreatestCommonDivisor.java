@@ -33,7 +33,7 @@ The greatest common divisor for 125 and 2525 is 25
 		// processing
 		gcd = 1;
 		increasingNumber = 1;
-		while(increasingNumber <= n1 || increasingNumber <= n2)
+		while(increasingNumber <= n1 && increasingNumber <= n2)
 		{
 			if (n1 % increasingNumber == 0 && n2 % increasingNumber == 0)
 				gcd = increasingNumber;
