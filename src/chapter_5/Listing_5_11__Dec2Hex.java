@@ -16,18 +16,31 @@ The hex number is 4D2
 	public static void main(String[] args)
 	{
 		// input
+			// variables
 		int decimal;
 		Scanner input = new Scanner(System.in);
 		String hex = "";
 		String character = "";
-
+		int hexDigit;
+		char charCharacter;
+		int numberOfLoops = 0;
+		
+			// asks and receives input
 		System.out.print("Enter a decimal number: ");
 		decimal = input.nextInt();
 		input.close();
 
 		// processing
+			// keeping a loop open as it changes decimals to hexadecimals.
 		while (decimal != 0)
 		{
+			hexDigit = decimal % 16;
+			charCharacter = (char)((hexDigit <= 9 && hexDigit >= 0) ? 
+					(char)hexDigit + '0' : (char)hexDigit - 10 + 'A');
+			//System.out.print("   " + charCharacter + "   ");		// Debug
+			character = Character.toString(charCharacter);
+			
+			/*		// alternative version
 			switch (decimal % 16)
 			{
 			case 0: character = "0"; break;
@@ -48,17 +61,21 @@ The hex number is 4D2
 			case 15: character = "F"; break;
 			default: System.out.print("\n Error on character switch.\n");System.exit(-1);
 			}
+			*/
 			
 			hex = character + hex;
 			decimal /= 16;
+			numberOfLoops++;
 		}
 
 		// output
-		System.out.printf("The hex number is %s", hex);
-
+		System.out.printf("The hex number is %s\n", hex);
+		System.out.println("The number of loops that were run: " + numberOfLoops);
 
 		//System.out.println(1234 % 16);			// 2
 
 	}
 
 }
+
+// Completed again.

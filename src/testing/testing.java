@@ -1,6 +1,6 @@
 package testing;
 
-import java.util.Scanner;
+//import java.util.Scanner;
 
 public class testing {
 
@@ -290,17 +290,85 @@ action-after-each-iteration
 			System.out.println();
 			i++;
 		} while (i <= 5);
-		*/
+		 */
 		/*
 		1G
 		1G3G
 		1G3G5G
 		1G3G5G7G
 		1G3G5G7G9G
-		
+
 		 */		// I was wrong. Wasn't num being multiplied... was being added. (changing).
 
+		/*
+		int balance = 10;
+		while (true)
+		{
+			if (balance < 9)
+				break;
+			balance = balance - 9;
+		}
+		System.out.println("Balance is "
+				+ balance);
+		 */
+		// My guess: "Balance is 1".	// I was correct!
 
+		/*
+		int balance = 10;
+		while (true) {
+			if (balance < 9)
+				continue;
+			balance = balance - 9;
+		}
+		System.out.println("Balance is " + balance);
+		 */
+		// Infinite loop. error says "Unreachable code"
 
+		/*
+		//5.27a Show the output
+		for (int i = 1; i < 4; i++)
+		{
+			for (int j = 1; j < 4; j++)
+			{
+				if (i * j > 2)
+					break;
+				System.out.println(i * j);
+			}
+			System.out.println(i);
+		}
+		*/
+		// My guess of output: I was wrong... correcting
+		/*
+		1
+		2
+		1
+		2
+		2
+		3
+		
+		 */
+		
+		//5.27b Show the output.
+		for (int i = 1; i < 4; i++)
+		{
+			for (int j = 1; j < 4; j++)
+			{
+			if (i * j > 2)
+			continue;
+			System.out.println(i * j);
+			}
+			System.out.println(i);
+		}
+		
+		// My guess of output: I was correct.
+		/*
+		1
+		2
+		1
+		2
+		2
+		3
+		
+		 */
 	}
 }
