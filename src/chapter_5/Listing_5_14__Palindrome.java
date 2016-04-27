@@ -29,17 +29,17 @@ number of characters.
 		// processing	make a loop to check if string is a palendrome
 		int i = 0;
 		int j = string.length() - 1;
-		while (i < string.length() && j >= 0)
+		while (i <  j)
 		{
 			if (string.charAt(i) != string.charAt(j))
 			{
 				palindrome = false;
 				break;
 			}
-			/*	// Debug
+				// Debug
 			System.out.printf("\ni: %d j: %d charAtI: %c charAtJ: %c palindrome: %b\n",
 					i, j, string.charAt(i), string.charAt(j), palindrome);
-			*/
+			
 			i++;
 			j--;
 		}

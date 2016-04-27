@@ -1,4 +1,4 @@
-package testing;
+package chapter_4;
 
 public class CheckPoint_4_24__ {
 	
