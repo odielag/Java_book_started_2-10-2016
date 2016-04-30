@@ -36,16 +36,16 @@ number of characters.
 				palindrome = false;
 				break;
 			}
-				// Debug
+			/*	// Debug
 			System.out.printf("\ni: %d j: %d charAtI: %c charAtJ: %c palindrome: %b\n",
 					i, j, string.charAt(i), string.charAt(j), palindrome);
-			
+			*/
 			i++;
 			j--;
 		}
 
 		// output   display if the string is a palendrome
-		System.out.printf("%s", (palindrome) ? 
+		System.out.printf("%s\n", (palindrome) ? 
 				"The string is a palindrome" : 
 				"The string is not a palindrome");
 	}

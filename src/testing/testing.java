@@ -336,7 +336,7 @@ action-after-each-iteration
 			}
 			System.out.println(i);
 		}
-		*/
+		 */
 		// My guess of output: I was wrong... correcting
 		/*
 		1
@@ -345,10 +345,11 @@ action-after-each-iteration
 		2
 		2
 		3
-		
+
 		 */
-		
+
 		//5.27b Show the output.
+		/*
 		for (int i = 1; i < 4; i++)
 		{
 			for (int j = 1; j < 4; j++)
@@ -359,7 +360,7 @@ action-after-each-iteration
 			}
 			System.out.println(i);
 		}
-		
+		 */
 		// My guess of output: I was correct.
 		/*
 		1
@@ -368,7 +369,30 @@ action-after-each-iteration
 		2
 		2
 		3
-		
+
 		 */
+
+		/*
+		int count = 0;
+		while (count++ < 10) {
+		  System.out.println("Welcome to Java");
+		}
+		*/
+		/*
+		int count = 0;
+		
+		System.out.println(count++ == 0);
+		System.out.println(count);
+		*/
+		
+		/*
+		for (int i = 0; i < 10; ++i)
+		{
+			System.out.println(i);
+		}
+		*/
+		
+		//System.out.println("stuff");
+		
 	}
 }

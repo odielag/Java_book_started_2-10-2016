@@ -9,13 +9,13 @@ Display the first 50 prime numbers, 10 columns 5 rows.
 	public static void main(String[] args)
 	{
 		// input
-		int numberOfPrimesFound = 2;
+		int numberOfPrimesFound = 1;
 		int tempHigh = 3;
 
 		// processing
 
 		// arbitrarily adding printouts of 1 and 2 (prime numbers).
-		System.out.printf("%8d%8d", 1, 2);
+		System.out.printf("The first 50 prime numbers are:\n%-8d", 2);
 
 		// i is the incrementing test number to check if tempHigh is divisible by something
 		while (numberOfPrimesFound < 50)
@@ -25,7 +25,7 @@ Display the first 50 prime numbers, 10 columns 5 rows.
 				// If i gets to equal tempHigh then tempHigh is a prime number.
 				if (i == tempHigh)
 				{
-					System.out.printf("%8d", tempHigh);
+					System.out.printf("%-8d", tempHigh);
 					tempHigh++;
 					numberOfPrimesFound++;
 					if (numberOfPrimesFound % 10 == 0)
