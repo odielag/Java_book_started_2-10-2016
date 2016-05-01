@@ -8,7 +8,7 @@ import java.util.Arrays;
  * enter the num- ber of students and each student’s name and score, and finally
  * displays the name of the student with the highest score.
  * 
- * @author username
+ * @author William ODieLag Pennington
  * @version 1.0
  * @since 2016-5-1
  */

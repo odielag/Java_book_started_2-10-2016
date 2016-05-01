@@ -6,8 +6,9 @@ package chapter_5;
  * all the numbers from 100 to 1,000, ten per line, that are divisible by 5 and
  * 6. Numbers are separated by exactly one space.
  * 
- * @author username
- *
+ * @author William ODieLag Pennington
+ * @version 1.0
+ * @since 2016-5-1
  */
 
 public class Exercise_5_10__FindNumbersDivisibleBy5And6

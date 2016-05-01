@@ -12,8 +12,8 @@ Miles		Kilometers	|	Kilometers		Miles
 9			14.481		|	60				37.290
 10			16.090		|	65				40.398
  * 
- * @author username
- * @version 0.1
+ * @author William ODieLag Pennington
+ * @version 1.0
  * @since 2016-4-30
  */
 

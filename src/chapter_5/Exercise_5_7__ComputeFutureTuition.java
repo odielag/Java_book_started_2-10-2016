@@ -9,7 +9,7 @@ package chapter_5;
  * computes the tuition in ten years and the total cost of four years’ worth of 
  * tuition after the tenth year.
  * 
- * @author username
+ * @author William ODieLag Pennington
  * @version 1.0
  * @since 2016-5-1
  */

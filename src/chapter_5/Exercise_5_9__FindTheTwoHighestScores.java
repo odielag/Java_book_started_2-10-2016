@@ -10,7 +10,7 @@ import java.util.Scanner;
  * finally displays the student with the highest score and the student with the
  * second-highest score.
  * 
- * @author username
+ * @author William ODieLag Pennington
  * @version 1.00
  * @since 2016-5-1
  *
