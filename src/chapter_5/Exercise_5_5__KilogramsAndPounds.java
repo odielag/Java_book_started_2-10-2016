@@ -12,7 +12,7 @@ Kilograms   Pounds		|		Pounds		Kilograms
 199			437.8		|		515			234.09
  * 
  * @author William ODieLag Pennington
- * @version 0.1
+ * @version 1.0
  * @since 2016-4-30
  */
 
