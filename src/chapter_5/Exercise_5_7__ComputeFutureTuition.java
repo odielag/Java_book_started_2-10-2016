@@ -20,7 +20,8 @@ public class Exercise_5_7__ComputeFutureTuition
 	{
 		// input
 		int year = 1;
-		double apr = 1.00;
+		double tuitionModifier = 1.00;
+		double APR = 1.05;
 		double tuition = 0;
 		
 		/*		// Trying a different way
@@ -33,23 +34,23 @@ public class Exercise_5_7__ComputeFutureTuition
 			if (year <= 10)
 			{
 				year++;
-				apr = apr * 1.05;
+				tuitionModifier = tuitionModifier * APR;
 				continue;
 			}
-			tuition += (10000 * apr);
+			tuition += (10000 * tuitionModifier);
 			year++;
-			apr = apr * 1.05;
+			tuitionModifier = tuitionModifier * APR;
 		}
 		*/		// The total tuition is: $70207.39453239123
 		
 		for (int i = 0; i < 10; i++)
 		{
-			apr = apr * 1.05;
+			tuitionModifier = tuitionModifier * APR;
 		}
 		for (int i = 0; i < 4; i++)
 		{
-			tuition += 10000 * apr;
-			apr = apr * 1.05;
+			tuition += 10000 * tuitionModifier;
+			tuitionModifier = tuitionModifier * APR;
 		}
 				// The total tuition is: $70207.39453239123
 		

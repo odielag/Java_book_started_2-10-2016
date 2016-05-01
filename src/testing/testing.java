@@ -394,7 +394,7 @@ action-after-each-iteration
 		
 		//System.out.println("stuff");
 		
-		System.out.println(1.05 * Math.pow(1.05, 9));
+		//System.out.println(1.05 * Math.pow(1.05, 9));
 		
 	}
 }
