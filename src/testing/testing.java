@@ -3,6 +3,12 @@ package testing;
 //import java.util.Scanner;
 
 public class testing {
+	
+	/*
+	 * NOTES:
+	 * Ctrl+Shift+f = auto format (indentation, comments)
+	 * Ctrl+Shift+o = auto imports dialogue.
+	 */
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
