@@ -1,26 +1,30 @@
 package chapter_5;
 
-public class Listing_5_15__PrimeNumber {
+public class Listing_5_15__PrimeNumber
+{
 
-	/*
-Display the first 50 prime numbers, 10 columns 5 rows.
+	/**
+	 * 
+	 * <h1>Display the first 50 prime numbers, 10 columns 5 rows.</h1>
+	 * 
+	 * @author William ODieLag Pennington
+	 * @version 1.1
+	 * @Since 2016-5-4
 	 */
 
 	public static void main(String[] args)
 	{
 		// input
-		int numberOfPrimesFound = 1;
-		int tempHigh = 3;
+		int numberOfPrimesFound = 0;
+		int tempHigh = 2;
 
 		// processing
 
-		// arbitrarily adding printouts of 1 and 2 (prime numbers).
-		System.out.printf("The first 50 prime numbers are:\n%-8d", 2);
-
-		// i is the incrementing test number to check if tempHigh is divisible by something
+		// i is the incrementing test number to check if tempHigh is divisible
+		// by something
 		while (numberOfPrimesFound < 50)
 		{
-			for (int i = 2; i <= tempHigh; i++)		
+			for (int i = 2; i <= tempHigh; i++)
 			{
 				// If i gets to equal tempHigh then tempHigh is a prime number.
 				if (i == tempHigh)
@@ -32,11 +36,11 @@ Display the first 50 prime numbers, 10 columns 5 rows.
 						System.out.println();
 					break;
 				}
-				// If tempHigh is divisible  by something it exits the loop.
-				if (tempHigh % i == 0)		
+				// If tempHigh is divisible by something it exits the loop.
+				if (tempHigh % i == 0)
 				{
 					tempHigh++;
-					break;			
+					break;
 				}
 			}
 		}

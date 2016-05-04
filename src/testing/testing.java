@@ -8,6 +8,14 @@ public class testing {
 	 * NOTES:
 	 * Ctrl+Shift+f = auto format (indentation, comments)
 	 * Ctrl+Shift+o = auto imports dialogue.
+	 * 
+	 * At exercise 5.18 I decided to not do all exercises.
+	 * I think I will do all even exercises starting at 5.18.
+	 * 
+	 * @author William ODieLag Pennington
+	 * @version 0.7
+	 * @since 2016-5-4
+	 * 
 	 */
 
 	public static void main(String[] args) {

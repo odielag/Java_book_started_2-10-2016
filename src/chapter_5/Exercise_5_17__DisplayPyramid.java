@@ -15,7 +15,7 @@ import java.util.Scanner;
  * 4   3   2   1   2   3   4
  * 
  * @author William ODieLag Pennington
- * @version 0.1
+ * @version 1.0
  * @since 2016-5-3
  */
 
