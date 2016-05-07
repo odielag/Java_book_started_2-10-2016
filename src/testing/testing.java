@@ -418,7 +418,7 @@ action-after-each-iteration
 		System.out.println(p = p / i);
 		*/
 		
-		
+		System.out.print((int)(2/7) * 7);
 		
 	}
 }
