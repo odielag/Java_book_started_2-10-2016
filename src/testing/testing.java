@@ -411,6 +411,14 @@ action-after-each-iteration
 		//System.out.println(1.05 * Math.pow(1.05, 9));
 		
 		//System.out.print(Integer.MIN_VALUE);
+		/*
+		double p = 10, i = 50;
+		System.out.println(p /= i);
+		p = 10; i = 50;
+		System.out.println(p = p / i);
+		*/
+		
+		
 		
 	}
 }

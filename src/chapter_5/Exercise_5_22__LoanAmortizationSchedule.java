@@ -55,8 +55,8 @@ public class Exercise_5_22__LoanAmortizationSchedule
 	{
 		// input
 		double loanAmount;			// user inputed loan amount
-		int numberOfYears;			// user inputed loan length
-		int numberOfMonths;			// numberOfYears derived term in months.
+		double numberOfYears;			// user inputed loan length
+		double numberOfMonths;			// numberOfYears derived term in months.
 		double annualInterestRate;	// user inputed APR as a whole number
 		double monthlyInterestRate;	// monthly APR calculated from other info.
 		double monthlyPayment;		// monthly principle + monthly interest
@@ -73,7 +73,7 @@ public class Exercise_5_22__LoanAmortizationSchedule
 		System.out.print("Loan Amount: ");
 		loanAmount = input.nextDouble();
 		System.out.print("Number of Years: ");
-		numberOfYears = input.nextInt();
+		numberOfYears = input.nextDouble();
 		System.out.print("Annual Interest Rate: ");
 		annualInterestRate = input.nextDouble() / 100.000000;
 		System.out.println();
@@ -96,7 +96,7 @@ public class Exercise_5_22__LoanAmortizationSchedule
 		System.out.printf("%-16s%-16s%-16s%-16s\n",
 				"Payment#", "Interest", "Principal", "Balance");
 		// pasted from problem note...
-		for (int i = 1; i <= numberOfYears * 12; i++)
+		for (int i = 1; (int)(balance * 100) > 0; i++)
 		{
 			monthlyInterest = monthlyInterestRate * balance;
 			monthlyPrincipal = monthlyPayment - monthlyInterest;
