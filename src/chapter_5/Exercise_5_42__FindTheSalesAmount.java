@@ -8,7 +8,7 @@ import java.util.Scanner;
  * enter COMMISSION_SOUGHT instead of fixing it as a constant.
  * 
  * @author William ODieLag Pennington
- * @version 0.1
+ * @version 0.0
  * @since 2016-5-8
  *
  */
@@ -37,5 +37,6 @@ public class Exercise_5_42__FindTheSalesAmount
 		sum += 5000 * 1.08 + 5000 * 1.10;
 		System.out.printf("%s",
 				COMMISSION_SOUGHT == sum ? "The formula is correct" : "The formula is incorrect");
+		input.close();
 	}
 }
