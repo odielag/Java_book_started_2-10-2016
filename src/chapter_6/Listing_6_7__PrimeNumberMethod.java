@@ -29,7 +29,7 @@ public class Listing_6_7__PrimeNumberMethod
 		// input
 		Scanner input = new Scanner(System.in);
 
-		System.out.printf("Number of lines? \n");
+		System.out.printf("Number of lines? ");
 		printPrimeNumbers(input.nextInt());
 		input.close();
 		// processing
@@ -39,7 +39,7 @@ public class Listing_6_7__PrimeNumberMethod
 
 	public static void printPrimeNumbers(int lines)
 	{
-		lines = lines * 10;
+		lines *= 10;
 		int tempHigh = 2;
 		int numberOfPrimesFound = 0;
 		while (numberOfPrimesFound < lines)
