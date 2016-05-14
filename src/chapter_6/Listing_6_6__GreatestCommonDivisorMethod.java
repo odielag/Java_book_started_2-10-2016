@@ -31,8 +31,6 @@ The greatest common divisor for 125 and 2525 is 25
 	
 	public static void main(String[] args)
 	{
-		
-		// input
 		long n1, n2;
 		Scanner input = new Scanner(System.in);
 		
@@ -40,13 +38,13 @@ The greatest common divisor for 125 and 2525 is 25
 		n1 = input.nextLong();
 		System.out.print("Enter second integer: ");
 		n2 = input.nextLong();
-		GreatestCommonDivisor(n1, n2);
 		input.close();
+		System.out.printf("The greatest common divisor for %d and %d is %d",
+				n1, n2, GreatestCommonDivisor(n1, n2));
 	}
 	
-	public static void GreatestCommonDivisor(long n1, long n2)
+	public static long GreatestCommonDivisor(long n1, long n2)
 	{
-		// processing
 		long gcd = 1;
 		long increasingNumber = 1;
 		while(increasingNumber <= n1 && increasingNumber <= n2)
@@ -55,10 +53,6 @@ The greatest common divisor for 125 and 2525 is 25
 				gcd = increasingNumber;
 			increasingNumber++;
 		}
-		
-		
-		// output
-		System.out.printf("The greatest common divisor for %d and %d is %d",
-				n1, n2, gcd);
+		return gcd;
 	}
 }
