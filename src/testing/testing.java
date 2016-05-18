@@ -304,6 +304,9 @@ public class testing
 		//nPrintln("crap", ints);
 		
 		
+		//System.out.println("\uD83D\uDE02");
+		//System.out.println("😂");
+		
 	}
 	
 	

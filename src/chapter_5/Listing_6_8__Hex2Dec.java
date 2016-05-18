@@ -16,14 +16,17 @@ public class Listing_6_8__Hex2Dec
 {
 	public static void main(String[] args)
 	{
+		String hex;
 		Scanner input = new Scanner(System.in);
 		System.out.print("Please enter a hexadecimal string: ");
-		System.out.print(hex2Dec(input.nextLine()));
+		hex = input.next();
+		System.out.printf("The decimal value for hex %s  is %d", hex, hex2Dec(hex));
 		input.close();
 	}
 
 	public static long hex2Dec(String hexString)
 	{
+		hexString = hexString.toUpperCase();
 		// loop to check that the hex string has all hex characters.
 		for (int i = 0; i < hexString.length(); i++)
 		{
@@ -37,7 +40,7 @@ public class Listing_6_8__Hex2Dec
 			}
 		}
 
-		int decimalNumber = 0;
+		long decimalNumber = 0;
 		// loop to convert the hex string to long decimalNumber.
 		for (int i = 0; i < hexString.length(); i++)
 		{
