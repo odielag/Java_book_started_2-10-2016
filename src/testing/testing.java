@@ -307,6 +307,16 @@ public class testing
 		//System.out.println("\uD83D\uDE02");
 		//System.out.println("😂");
 		
+		/*
+		int a = 12312;
+		int b = 653633;
+		a = a+b;
+		b = a-b;
+		a = a-b;
+		System.out.println("a: " + a);
+		System.out.println("b: " + b);
+		*/
+		
 	}
 	
 	

@@ -65,4 +65,17 @@ public class Listing_6_7__PrimeNumberMethod
 			}
 		}
 	}
+
+	public static boolean isPrime(int number)
+	{
+		boolean isPrime = false;
+		for (int i = 2; i <= number; i++)
+		{
+			if (i == number)
+				isPrime = true;
+			else if (number % i == 0)
+				break;
+		}
+		return isPrime;
+	}
 }
