@@ -1,0 +1,44 @@
+package testing;
+
+/**
+ * Write a program that prints the numbers from 1 to 100. But for multiples of
+ * three print “Fizz” instead of the number and for the multiples of five print
+ * “Buzz”. For numbers which are multiples of both three and five print
+ * “FizzBuzz”.
+ * 
+ * @author username
+ *
+ */
+
+public class fizzbuzz_random_practice
+{
+	public static void main(String[] args)
+	{
+		/* 		// First version
+		for(int i = 1; i <= 100; i++)
+		{
+			if (i % 3 == 0 && i % 5 == 0)
+				System.out.println("FizzBuzz");
+			else if (i % 3 == 0)
+				System.out.println("Buzz");
+			else if (i % 5 == 0)
+				System.out.println("Buzz");
+			else
+				System.out.println(i);
+		}
+		*/
+		for(int i = 1; i <= 100; i++)
+		{
+			if (i % 3 == 0 && i % 5 == 0)
+				System.out.printf("%-10s", "FizzBuzz");
+			else if (i % 3 == 0)
+				System.out.printf("%-10s", "Buzz");
+			else if (i % 5 == 0)
+				System.out.printf("%-10s", "Buzz");
+			else
+				System.out.printf("%-10d", i);
+			if (i % 10 == 0)
+				System.out.println();
+		}
+	}
+}

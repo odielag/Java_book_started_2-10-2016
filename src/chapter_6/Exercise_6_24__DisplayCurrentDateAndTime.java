@@ -1,5 +1,7 @@
 package chapter_6;
 
+import java.util.Calendar;
+
 /**
  * <h1>(Display current date and time)</h1> Listing 2.7, ShowCurrentTime.java,
  * displays the current time. Improve this example to display the current date
@@ -7,7 +9,7 @@ package chapter_6;
  * give you some ideas on how to find the year, month, and day.
  * 
  * @author William ODieLag Pennington
- * @version 0.1
+ * @version 1.0
  * @since 2016-5-20
  *
  */
@@ -17,9 +19,33 @@ public class Exercise_6_24__DisplayCurrentDateAndTime
 	/** main method to initialize testing from */
 	public static void main(String[] args)
 	{
-		minutesConverted(1000000000);
+		//minutesConverted(System.currentTimeMillis() / 1000);
+		Calendar now = Calendar.getInstance();
+		printMonth(now.get(Calendar.YEAR), now.get(Calendar.MONTH), now.get(Calendar.DAY_OF_MONTH));
+
 	}
 
+	/** The real listing 2.7 I should have pasted... */
+	public static void ShowCurrentTime()
+	{
+		// Obtain the total milliseconds since midnight, Jan 1, 1970
+		long totalMilliseconds = System.currentTimeMillis();
+		// Obtain the total seconds since midnight, Jan 1, 1970
+		long totalSeconds = totalMilliseconds / 1000;
+		// Compute the current second in the minute in the hour
+		long currentSecond = totalSeconds % 60;
+		// Obtain the total minutes
+		long totalMinutes = totalSeconds / 60;
+		// Compute the current minute in the hour
+		long currentMinute = totalMinutes % 60;
+		// Obtain the total hours
+		long totalHours = totalMinutes / 60;
+		// Compute the current hour
+		long currentHour = totalHours % 24;
+		// Display results
+		System.out.println("Current time is " + currentHour + ":" + currentMinute + ":" + currentSecond + " GMT");
+	}
+	
 	/*
 	 * (Find the number of years) Write a program that prompts the user to enter
 	 * the minutes (e.g., 1 billion), and displays the number of years and days
@@ -30,28 +56,27 @@ public class Exercise_6_24__DisplayCurrentDateAndTime
 	 * 
 	 * 1000000000 minutes is approximately 1902 years and 214 days
 	 */
-	public static void minutesConverted(int minutes)
+	public static void minutesConverted(long minutes)
 	{
-		int years, month = 0, days, day;
-		years = minutes / (365 * 24 * 60);
-		minutes -= (365 * 24 * 60 * years);
+		long year, month = 0, days, day;
+		year = minutes / (365 * 24 * 60);
+		minutes -= (365 * 24 * 60 * year);
 		days = minutes / (24 * 60);
+		minutes -= (24 * 60) * days;
 
-		// Converting days to months and day.
-		int[] daysInThisMonth = {31, (isLeapYear(years)?29:28), 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}; // month january = 0.
-		// loop to check what month it is.
-		for (int i = 0; i < daysInThisMonth.length; i++)
+		// Find out which month the end day is in
+		for (int i = 1; i <= 12; i++)
 		{
-			if (days <= daysInThisMonth[i])
+			if (days <= getNumberOfDaysInMonth(year, i))
 			{
 				month = i;
 				break;
 			}
 			else
-				days -= daysInThisMonth[i];
+				days -= getNumberOfDaysInMonth(year, i);
 		}
 		day = days;
-		printMonth(years, month + 1, day);
+		printMonth(year, month, day);
 
 		// instead of printing out data below, pass the 3 variables to
 		// printCalendar.
@@ -69,7 +94,7 @@ public class Exercise_6_24__DisplayCurrentDateAndTime
 	 * a calendar
 	 */
 	/** Print the calendar for a month in a year */
-	public static void printMonth(int year, int month, int day)
+	public static void printMonth(long year, long month, long day)
 	{
 		// Print the headings of the calendar
 		printMonthTitle(year, month);
@@ -78,7 +103,7 @@ public class Exercise_6_24__DisplayCurrentDateAndTime
 	}
 
 	/** Print the month title, e.g., March 2012 */
-	public static void printMonthTitle(int year, int month)
+	public static void printMonthTitle(long year, long month)
 	{
 		System.out.println("	" + getMonthName(month) + " " + year);
 		System.out.println("-----------------------------");
@@ -86,9 +111,10 @@ public class Exercise_6_24__DisplayCurrentDateAndTime
 	}
 
 	/** Get the English name for the month */
-	public static String getMonthName(int month)
+	public static String getMonthName(long monthLong)
 	{
 		String monthName = "";
+		int month = (int)monthLong;
 		switch (month)
 		{
 		case 1:
@@ -131,7 +157,7 @@ public class Exercise_6_24__DisplayCurrentDateAndTime
 	}
 
 	/** Print month body */
-	public static void printMonthBody(int year, int month, int day)
+	public static void printMonthBody(long year, long month, long day)
 	{
 		// Get start day of the week for the first date in the month
 		int startDay = getStartDay(year, month);
@@ -141,7 +167,7 @@ public class Exercise_6_24__DisplayCurrentDateAndTime
 		// Pad space before the first day of the month
 		int i = 0;
 		for (i = 0; i < startDay; i++)
-			System.out.print("	");
+			System.out.print("    ");
 		// for loop like above but goes until i < day
 		for (i = 1; i < day; i++)
 		{
@@ -150,21 +176,14 @@ public class Exercise_6_24__DisplayCurrentDateAndTime
 				System.out.println();
 		}		
 		// for loop like above but just works on i = day
-		for (i = 1; i == day; i++)
+		for (; i == day; i++)
 		{
-			System.out.printf("%4d", "(" + i);
-			if ((i + startDay) % 7 == 0)
-				System.out.println();
-		}		
-		// for loop like above but just works on i = day + 1
-		for (i = 1; i == day + 1; i++)
-		{
-			System.out.printf("%-2s%2d", "(", i);
+			System.out.printf("%4s", "(" + i + ")");
 			if ((i + startDay) % 7 == 0)
 				System.out.println();
 		}		
 		// for loop like above but just works <= numberOfDaysInMonth
-		for (i = 1; i <= numberOfDaysInMonth; i++)
+		for (; i <= numberOfDaysInMonth; i++)
 		{
 			System.out.printf("%4d", i);
 			if ((i + startDay) % 7 == 0)
@@ -174,7 +193,7 @@ public class Exercise_6_24__DisplayCurrentDateAndTime
 	}
 
 	/** Get the start day of month/1/year */
-	public static int getStartDay(int year, int month)
+	public static int getStartDay(long year, long month)
 	{
 		final int START_DAY_FOR_JAN_1_1800 = 3;
 		// Get total number of days from 1/1/1800 to month/1/year
@@ -185,24 +204,24 @@ public class Exercise_6_24__DisplayCurrentDateAndTime
 	}
 
 	/** Get the total number of days since January 1, 1800 */
-	public static int getTotalNumberOfDays(int year, int month)
+	public static int getTotalNumberOfDays(long year, long month)
 	{
 		int total = 0;
 
 		// Get the total days from 1800 to 1/1/year
 		for (int i = 1800; i < year; i++)
 			if (isLeapYear(i))
-				total = total + 366;
+				total += 366;
 			else
-				total = total + 365;
+				total += 365;
 		// Add days from Jan to the month prior to the calendar month
 		for (int i = 1; i < month; i++)
-			total = total + getNumberOfDaysInMonth(year, i);
+			total += getNumberOfDaysInMonth(year, i);
 		return total;
 	}
 
 	/** Get the number of days in a month */
-	public static int getNumberOfDaysInMonth(int year, int month)
+	public static int getNumberOfDaysInMonth(long year, long month)
 	{
 		if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12)
 			return 31;
@@ -215,7 +234,7 @@ public class Exercise_6_24__DisplayCurrentDateAndTime
 	}
 
 	/** Determine if it is a leap year */
-	public static boolean isLeapYear(int year)
+	public static boolean isLeapYear(long year)
 	{
 		return year % 400 == 0 || (year % 4 == 0 && year % 100 != 0);
 	}

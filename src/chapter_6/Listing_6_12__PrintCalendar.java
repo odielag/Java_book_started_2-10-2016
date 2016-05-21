@@ -91,8 +91,8 @@ public class Listing_6_12__PrintCalendar
 		int numberOfDaysInMonth = getNumberOfDaysInMonth(year, month);
 		// Pad space before the first day of the month
 		int i = 0;
-		for (i = 0; i < startDay; i++)
-			System.out.print("	");
+		for (; i < startDay; i++)
+			System.out.print("    ");
 
 		for (i = 1; i <= numberOfDaysInMonth; i++)
 		{

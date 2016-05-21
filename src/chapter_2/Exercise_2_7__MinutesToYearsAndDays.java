@@ -20,10 +20,9 @@ Enter the number of minutes: 1000000000
 		int minutes = input.nextInt();
 		input.close();
 		
-		//processing
+		//processing + output
 		minutesConverted(minutes);
 		
-		//output
 		
 		
 	}
