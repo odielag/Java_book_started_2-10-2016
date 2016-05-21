@@ -1,5 +1,7 @@
 package testing;
 
+import chapter_6.Listing_6_7__PrimeNumberMethod;
+
 //import java.util.Scanner;
 
 public class testing
@@ -317,6 +319,9 @@ public class testing
 		System.out.println("b: " + b);
 		*/
 		
+		//System.out.println(Listing_6_7__PrimeNumberMethod.isPrime(79));
+		
+
 	}
 	
 	

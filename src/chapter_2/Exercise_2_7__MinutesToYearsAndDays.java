@@ -11,29 +11,29 @@ Enter the number of minutes: 1000000000
 1000000000 minutes is approximately 1902 years and 214 days
 	 */
 
-
-	private static int minutes, years, days;
 	
 	public static void main(String[] args) {
 		
 		//input
 		java.util.Scanner input = new java.util.Scanner(System.in);
 		System.out.printf("Enter the number of minutes: \t");
-		minutes = input.nextInt();
+		int minutes = input.nextInt();
 		input.close();
 		
 		//processing
 		minutesConverted(minutes);
 		
 		//output
-		System.out.printf("%d minutes is approximately %d years and %d days", minutes, years, days);
+		
 		
 	}
 	
 	public static void minutesConverted (int minutes){
+		int years, days;
 		years = minutes / (365 * 24 * 60);
 		minutes -= (365 * 24 * 60 * years);
 		days = minutes / (24 * 60);
+		System.out.printf("%d minutes is approximately %d years and %d days", minutes, years, days);
 	}
 
 }

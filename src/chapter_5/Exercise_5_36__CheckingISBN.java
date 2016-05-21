@@ -1,4 +1,4 @@
-package testing;
+package chapter_5;
 
 /**
  * <h1>(Business application: checking ISBN )</h1> Use loops to simplify
