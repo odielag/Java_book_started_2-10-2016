@@ -6,7 +6,7 @@ package chapter_6;
  * prime. Use this method to find the number of prime numbers less than 10000 .
  * 
  * @author William ODieLag Pennington
- * @version 0.1
+ * @version 1.0
  * @since 2016-5-18
  *
  */

@@ -321,6 +321,7 @@ public class testing
 		
 		//System.out.println(Listing_6_7__PrimeNumberMethod.isPrime(79));
 		
+		//System.out.println(Listing_6_7__PrimeNumberMethod.isPrime(23456789));
 
 	}
 	
