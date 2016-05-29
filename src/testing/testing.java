@@ -342,7 +342,15 @@ public class testing
 			System.out.print(list[i] + " ");
 		*/
 
-
+		/*
+		int[] sourceArray = {2, 3, 1, 5, 10};
+		int[] targetArray = new int[6];
+		System.arraycopy(sourceArray, 0, targetArray, 0, 6);
+		*/
+		
+		
+		
+		
 	}
 
 	// public static void nPrintln(String message, double n)

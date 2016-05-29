@@ -64,7 +64,7 @@ public class Listing_7_1__AnalyzeNumbers
 		
 		// print results
 		System.out.printf("For this array of length %d"
-				+ " the number of elements above the average %f is: %d", 
+				+ " \nThe number of elements above the average %f is: %d", 
 				array.length, elementsAverage, elementCounter);
 	}
 }
