@@ -1,5 +1,7 @@
 package testing;
 
+import java.math.BigDecimal;
+
 import chapter_6.Listing_6_7__PrimeNumberMethod;
 
 //import java.util.Scanner;
@@ -296,40 +298,66 @@ public class testing
 		 * don't know what this prog. is supposed to do.
 		 * 
 		 * 10. public class Test { public static double method (double i,
-		 * doublej) { while (i < j) j--; return j; } }
-		 * ^ sad. auto-reformat broke the formatting.
+		 * doublej) { while (i < j) j--; return j; } } ^ sad. auto-reformat
+		 * broke the formatting.
 		 * 
 		 */
-		
-		
-		//int ints = 3;
-		//nPrintln("crap", ints);
-		
-		
-		//System.out.println("\uD83D\uDE02");
-		//System.out.println("😂");
-		
+
+		// int ints = 3;
+		// nPrintln("crap", ints);
+
+		// System.out.println("\uD83D\uDE02");
+		// System.out.println("😂");
+
 		/*
-		int a = 12312;
-		int b = 653633;
-		a = a+b;
-		b = a-b;
-		a = a-b;
-		System.out.println("a: " + a);
-		System.out.println("b: " + b);
+		 * int a = 12312; int b = 653633; a = a+b; b = a-b; a = a-b;
+		 * System.out.println("a: " + a); System.out.println("b: " + b);
+		 */
+
+		// System.out.println(Listing_6_7__PrimeNumberMethod.isPrime(79));
+
+		// System.out.println(Listing_6_7__PrimeNumberMethod.isPrime(23456789));
+
+		/*
+		 * String binaryString =
+		 * "01010111011001010110110001101100001000000111001101100001011010010110010000100001";
+		 * convertBinaryToDecimal(binaryString);
+		 */
+
+		/*
+		 * int x = 30; int[] numbers = new int[x]; x = 60; System.out.println(
+		 * "x is " + x); System.out.println("The size of numbers is " +
+		 * numbers.length);
+		 */
+
+		// double d[] = new double[30];
+		// float f[] = {2.3f, 4.5f, 6.6f};
+		// char[] c = new char();
+
+		/*
+		int list[] = { 1, 2, 3, 4, 5, 6 };
+		for (int i = 1; i < list.length; i++)
+			list[i] = list[i - 1];
+		for (int i = 0; i < list.length; i++)
+			System.out.print(list[i] + " ");
 		*/
-		
-		//System.out.println(Listing_6_7__PrimeNumberMethod.isPrime(79));
-		
-		//System.out.println(Listing_6_7__PrimeNumberMethod.isPrime(23456789));
+
 
 	}
-	
-	
-	//public static void nPrintln(String message, double n)
-	//{
-	//	for (int i = 0; i < n; i++)
-	//		System.out.println(message);
-	//}
-	
+
+	// public static void nPrintln(String message, double n)
+	// {
+	// for (int i = 0; i < n; i++)
+	// System.out.println(message);
+	// }
+
+	/*
+	 * public static void convertBinaryToDecimal(String binaryString) {
+	 * BigDecimal decimalReturn = new BigDecimal(binaryString);
+	 * System.out.println(decimalReturn.longValueExact());
+	 * 
+	 * 
+	 * }
+	 */
+
 }
