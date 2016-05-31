@@ -348,8 +348,17 @@ public class testing
 		System.arraycopy(sourceArray, 0, targetArray, 0, 6);
 		*/
 		
+		/*
+		int[] randomArray;
+		randomArray = new int[5];
+		*/
 		
-		
+		// 7.13		
+		/*
+		int[] source = {3, 4, 5};
+		int[] t = new int[source.length];
+		System.arraycopy(source, 0, t, 0, source.length);
+		*/
 		
 	}
 
