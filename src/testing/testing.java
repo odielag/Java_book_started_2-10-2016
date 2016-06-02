@@ -335,32 +335,45 @@ public class testing
 		// char[] c = new char();
 
 		/*
-		int list[] = { 1, 2, 3, 4, 5, 6 };
-		for (int i = 1; i < list.length; i++)
-			list[i] = list[i - 1];
-		for (int i = 0; i < list.length; i++)
-			System.out.print(list[i] + " ");
-		*/
+		 * int list[] = { 1, 2, 3, 4, 5, 6 }; for (int i = 1; i < list.length;
+		 * i++) list[i] = list[i - 1]; for (int i = 0; i < list.length; i++)
+		 * System.out.print(list[i] + " ");
+		 */
 
 		/*
-		int[] sourceArray = {2, 3, 1, 5, 10};
-		int[] targetArray = new int[6];
-		System.arraycopy(sourceArray, 0, targetArray, 0, 6);
-		*/
+		 * int[] sourceArray = {2, 3, 1, 5, 10}; int[] targetArray = new int[6];
+		 * System.arraycopy(sourceArray, 0, targetArray, 0, 6);
+		 */
+
+		/*
+		 * int[] randomArray; randomArray = new int[5];
+		 */
+
+		// 7.13
+		/*
+		 * int[] source = {3, 4, 5}; int[] t = new int[source.length];
+		 * System.arraycopy(source, 0, t, 0, source.length);
+		 */
 		
 		/*
-		int[] randomArray;
-		randomArray = new int[5];
-		*/
+		int[] list = { 1, 2, 3, 4, 5 };
 		
-		// 7.13		
-		/*
-		int[] source = {3, 4, 5};
-		int[] t = new int[source.length];
-		System.arraycopy(source, 0, t, 0, source.length);
-		*/
+		int[] newList = new int[list.length];
+		for (int i = 0; i < list.length; i++)
+		{
+			newList[i] = list[list.length - 1 - i];
+		}
+		list = newList;
 		
+		for (int i = 0; i < list.length; i++)
+		{
+			System.out.print(list[i] + " ");
+		}
+		*/
+
 	}
+
+
 
 	// public static void nPrintln(String message, double n)
 	// {
