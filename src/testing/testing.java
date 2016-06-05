@@ -1,6 +1,7 @@
 package testing;
 
 import java.math.BigDecimal;
+import java.util.Arrays;
 
 import chapter_6.Listing_6_7__PrimeNumberMethod;
 
@@ -371,7 +372,21 @@ public class testing
 		}
 		*/
 
-		System.out.println("Hello World!");
+		//System.out.println("Hello World!");
+		
+		/*
+		int[] i = {1, 2, 3, 4};
+		int[] j = i;
+		i = new int[2];
+		System.out.println(Arrays.toString(j));
+		*/
+		
+		/*
+		int[] list = new int[5];
+		list = new int[6];
+		System.out.println(list.length);
+		*/
+		
 		
 	}
 
