@@ -387,11 +387,17 @@ public class testing
 		System.out.println(list.length);
 		*/
 		
+		/*
+		int[] primeArray = {2, 3};
+		int[] tempArray = new int[primeArray.length + 1];
+		System.arraycopy(primeArray, 0, tempArray, 0, primeArray.length);
+		tempArray[2] = 4;
+		primeArray = tempArray;
+		System.out.print(Arrays.toString(primeArray));
+		*/
+		
 		
 	}
-
-
-
 	// public static void nPrintln(String message, double n)
 	// {
 	// for (int i = 0; i < n; i++)
