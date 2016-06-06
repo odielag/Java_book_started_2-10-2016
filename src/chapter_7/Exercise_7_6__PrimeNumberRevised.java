@@ -5,7 +5,7 @@ package chapter_7;
  * whether a number n is prime by checking whether 2 , 3 , 4 , 5 , 6 , . . . ,
  * n/2 is a divisor. If a divisor is found, n is not prime. A more efficient
  * approach is to check whether any of the prime numbers less than or equal to
- * 2n can divide n evenly. If not, n is prime. Rewrite Listing 5.15 to display
+ * Math.sqrt(n) can divide n evenly. If not, n is prime. Rewrite Listing 5.15 to display
  * the first 50 prime numbers using this approach. You need to use an array to
  * store the prime numbers and later use them to check whether they are possible
  * divisors for n .
@@ -71,9 +71,9 @@ public class Exercise_7_6__PrimeNumberRevised
 	{
 		for (int i = 0; i < array.length; i++)
 		{
-			if (i % width == 0)
+			if (i % width == 0 && i != 0)
 				System.out.println();
-			System.out.printf("%-6d", array[i]);
+			System.out.printf("%-10d", array[i]);
 		}
 	}
 }
