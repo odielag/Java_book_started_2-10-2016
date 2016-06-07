@@ -10,7 +10,7 @@ import java.util.Scanner;
  * method, and displays the average value.
  * 
  * @author William ODieLag Pennington
- * @version 0.1
+ * @version 1.0
  * @since 2016-6-5
  *
  */
@@ -18,13 +18,13 @@ import java.util.Scanner;
 public class Exercise_7_8__AverageAnArray
 {
 	// method used to test the double average method.
-	public static void testProgram(String[] args)
+	public static void main(String[] args)
 	{
 		double[] array = new double[10];
 		// Write a test program that prompts the user to enter 10 double values
 		// invokes the method and displays the average value.
 		Scanner input = new Scanner(System.in);
-		System.out.print("Please enter 10 double values");
+		System.out.print("Please enter 10 double values: ");
 		for(int i = 0; i < 10; i++)
 		{
 			array[i] = input.nextDouble();
