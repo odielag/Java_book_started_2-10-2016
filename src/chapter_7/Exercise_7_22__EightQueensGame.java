@@ -34,18 +34,15 @@ public class Exercise_7_22__EightQueensGame
 	public static boolean[][] board = new boolean[8][8]; // first index is
 															// horizontal/row.
 	public static boolean[][] tryArray = new boolean[8][8];
-	public static int queensPlaced = 0;
-	public static int tryArrayUniquePlaced = 0;
 
 	public static void main(String[] args)
 	{
 		eightQueensGame();
-		// incrementalQueenPlacement();
 	}
 
 	public static void eightQueensGame()
 	{
-
+		int queensPlaced = 0;
 		while (queensPlaced != 8)
 		{
 			// generate random horizontal and vertical index.
