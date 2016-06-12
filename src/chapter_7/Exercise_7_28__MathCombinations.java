@@ -7,7 +7,7 @@ import java.util.Scanner;
  * 10 integers and displays all combinations of picking two numbers from the 10.
  * 
  * @author William ODieLag Pennington
- * @version 0.1
+ * @version 1.0
  * @since 2016-6-12
  *
  */
