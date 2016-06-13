@@ -24,7 +24,7 @@ package chapter_7;
  * | | | |Q| | | | |
  * 
  * @author William ODieLag Pennington
- * @version 1.0
+ * @version 1.1
  * @since 2016-6-8
  *
  */
@@ -80,68 +80,49 @@ public class Exercise_7_22__EightQueensGame
 
 	// incremental placement doesn't work.
 
-	public static boolean doesItInterfere(int horizontal, int vertical)
+	public static boolean doesItInterfere(int x, int y)
 	{
 		// make true on tryArray where horizontal and vertical
-		tryArray[horizontal][vertical] = true;
-		// vertically
-		for (int i = 0; i < board.length; ++i)
-		{
-			if (board[horizontal][i])
-				return true;
-		}
-		// horizontally
-		for (int i = 0; i < board[0].length; ++i)
-		{
-			if (board[i][vertical])
-				return true;
-		}
-
-		// diagonally
-
+		tryArray[x][y] = true;
+		// vertically up
+		if(doesItInterfereDirection(x, y, 0, 1))
+			return true;
+		// vertical down
+		if(doesItInterfereDirection(x, y, 0, -1))
+			return true;
+		// horizontally right
+		if(doesItInterfereDirection(x, y, 1, 0))
+			return true;
+		// horizontally left
+		if(doesItInterfereDirection(x, y, -1, 0))
+			return true;
 		// diagonally up and right
-		int x = horizontal;
-		int y = vertical;
-		while (x < board.length && x >= 0 && y < board[0].length && y >= 0)
-		{
-			if (board[x][y])
-				return true;
-			++x;
-			++y;
-		}
+		if(doesItInterfereDirection(x, y, 1, 1))
+			return true;
 		// diagonally up and left
-		x = horizontal;
-		y = vertical;
-		while (x < board.length && x >= 0 && y < board[0].length && y >= 0)
-		{
-			if (board[x][y])
-				return true;
-			--x;
-			++y;
-		}
+		if(doesItInterfereDirection(x, y, -1, 1))
+			return true;
 		// diagonally down and right
-		x = horizontal;
-		y = vertical;
-		while (x < board.length && x >= 0 && y < board[0].length && y >= 0)
-		{
-			if (board[x][y])
-				return true;
-			++x;
-			--y;
-		}
+		if(doesItInterfereDirection(x, y, 1, -1))
+			return true;
 		// diagonally down and left
-		x = horizontal;
-		y = vertical;
-		while (x < board.length && x >= 0 && y < board[0].length && y >= 0)
-		{
-			if (board[x][y])
-				return true;
-			--x;
-			--y;
-		}
+		if(doesItInterfereDirection(x, y, -1, -1))
+			return true;
 		return false;
 	}
 
+	// doesItInterfereDirection
+	public static boolean doesItInterfereDirection(int x, int y, int xDirection, int yDirection)
+	{
+		while (x < board.length && x >= 0 && y < board[0].length && y >= 0)
+		{
+			if (board[x][y])
+				return true;
+			x += xDirection;
+			y += yDirection;
+		}
+		return false;
+	}
 	public static void displayBoard(boolean[][] board)
 	{
 
