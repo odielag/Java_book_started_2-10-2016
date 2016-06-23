@@ -355,49 +355,89 @@ public class testing
 		 * int[] source = {3, 4, 5}; int[] t = new int[source.length];
 		 * System.arraycopy(source, 0, t, 0, source.length);
 		 */
-		
-		/*
-		int[] list = { 1, 2, 3, 4, 5 };
-		
-		int[] newList = new int[list.length];
-		for (int i = 0; i < list.length; i++)
-		{
-			newList[i] = list[list.length - 1 - i];
-		}
-		list = newList;
-		
-		for (int i = 0; i < list.length; i++)
-		{
-			System.out.print(list[i] + " ");
-		}
-		*/
 
-		//System.out.println("Hello World!");
-		
 		/*
-		int[] i = {1, 2, 3, 4};
-		int[] j = i;
-		i = new int[2];
-		System.out.println(Arrays.toString(j));
+		 * int[] list = { 1, 2, 3, 4, 5 };
+		 * 
+		 * int[] newList = new int[list.length]; for (int i = 0; i <
+		 * list.length; i++) { newList[i] = list[list.length - 1 - i]; } list =
+		 * newList;
+		 * 
+		 * for (int i = 0; i < list.length; i++) { System.out.print(list[i] +
+		 * " "); }
+		 */
+
+		// System.out.println("Hello World!");
+
+		/*
+		 * int[] i = {1, 2, 3, 4}; int[] j = i; i = new int[2];
+		 * System.out.println(Arrays.toString(j));
+		 */
+
+		/*
+		 * int[] list = new int[5]; list = new int[6];
+		 * System.out.println(list.length);
+		 */
+
+		/*
+		 * int[] primeArray = {2, 3}; int[] tempArray = new
+		 * int[primeArray.length + 1]; System.arraycopy(primeArray, 0,
+		 * tempArray, 0, primeArray.length); tempArray[2] = 4; primeArray =
+		 * tempArray; System.out.print(Arrays.toString(primeArray));
+		 */
+
+		// 8.3
+		/*
+		 * int[][] array = new int[5][6]; int[] x = {1, 2}; array[0] = x;
+		 * System.out.println("array[0][1] is " + array[0][1]);
+		 */
+
+		/*
+		 * int[][] array = {{1, 2}, {3, 4}, {5, 6}}; for (int i = array.length -
+		 * 1; i >= 0; i--) { for (int j = array[i].length - 1; j >= 0; j--) {
+		 * System.out.print(array[i][j] + " "); } System.out.println(); }
+		 */
+
+		/*
+		 * int[][] array = {{1, 2}, {3, 4}, {5, 6}}; int sum = 0; for (int i =
+		 * 0; i < array.length; i++) sum += array[i][0];
+		 * System.out.println(sum);
+		 */
+
+		/*
+		 * int[][] array = {{1, 2, 3, 4}, {5, 6, 7, 8}};
+		 * System.out.println(m1(array)[0]); System.out.println(m1(array)[1]);
+		 */
+
+		/*
+		boolean[][] bool = new boolean[5][];
+		System.out.println(bool.length);
+		bool[0] = new boolean[1];
+		bool[1] = new boolean[2];
+		bool[2] = new boolean[3];
+		System.out.println(bool[1][1]);
 		*/
 		
 		/*
-		int[] list = new int[5];
-		list = new int[6];
-		System.out.println(list.length);
-		*/
-		
-		/*
-		int[] primeArray = {2, 3};
-		int[] tempArray = new int[primeArray.length + 1];
-		System.arraycopy(primeArray, 0, tempArray, 0, primeArray.length);
-		tempArray[2] = 4;
-		primeArray = tempArray;
-		System.out.print(Arrays.toString(primeArray));
+	    int[][] values = {{3, 4, 5, 1}, {33, 6, 1, 2}};
+
+	    int v = values[0][0];
+	    for (int[] list : values)
+	      for (int element : list)
+	        if (v > element)
+	          v = element;
+
+	    System.out.print(v);
 		*/
 		
 		
 	}
+
+	/*
+	 * public static int[] m1(int[][] m) { int[] result = new int[2]; result[0]
+	 * = m.length; result[1] = m[0].length; return result; }
+	 */
+
 	// public static void nPrintln(String message, double n)
 	// {
 	// for (int i = 0; i < n; i++)
