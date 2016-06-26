@@ -30,7 +30,7 @@ import java.util.Scanner;
  * 
  * 
  * @author William ODieLag Pennington
- * @version 0.1
+ * @version 1.0
  * @since 2016-6-25
  */
 
@@ -97,7 +97,7 @@ public class Exercise_8_14__ExploreMatrix
 				System.out.printf("All 0s on row %d\n", row);
 				foundrow = true;
 			}
-			if (sum == 4)
+			if (sum == matrix.length)
 			{
 				System.out.printf("All 1s on row %d\n", row);
 				foundrow = true;
@@ -248,7 +248,8 @@ public class Exercise_8_14__ExploreMatrix
 			int row = 0;
 			ones = 0;
 			zeroes = 0;
-			for (int incremental = 0; row + incremental < matrix.length - 1  && column + incremental < matrix.length; incremental++)
+			for (int incremental = 0; row + incremental < matrix.length - 1
+					&& column + incremental < matrix.length; incremental++)
 			{
 				if (matrix[row + incremental][column + incremental] == 0)
 					zeroes++;
