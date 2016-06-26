@@ -68,6 +68,7 @@ public class Exercise_8_8__AllClosestPairsOfPoints
 			{
 				double distance = distance(points[i][0], points[i][1], points[j][0], points[j][1]); // Find
 				// distance
+				// continuing if it is the already entered points.
 				if(i == 0 && j == 1)
 					continue;
 				
