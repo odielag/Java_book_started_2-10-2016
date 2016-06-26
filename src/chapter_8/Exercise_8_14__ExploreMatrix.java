@@ -240,7 +240,32 @@ public class Exercise_8_14__ExploreMatrix
 				subDiagonal = true;
 			}
 		}
-		// evaluate sub-diagonal direction down/right at 0, 1 and 
+		// evaluate sub-diagonal direction down/right at 0, 1 and end outside
+		// ... loop at 0, (column) < matrix.length - 1.
+		// ... 2 things need to change. initial row and direction of increment.
+		for (int column = 1; column < matrix.length - 1; column++)
+		{
+			int row = 0;
+			ones = 0;
+			zeroes = 0;
+			for (int incremental = 0; row + incremental < matrix.length - 1  && column + incremental < matrix.length; incremental++)
+			{
+				if (matrix[row + incremental][column + incremental] == 0)
+					zeroes++;
+				else if (matrix[row + incremental][column + incremental] == 1)
+					ones++;
+			}
+			if (zeroes > 1 && ones == 0)
+			{
+				System.out.printf("All 0s on minor diagonal column %d down/right\n", column);
+				subDiagonal = true;
+			}
+			if (ones > 1 && zeroes == 0)
+			{
+				System.out.printf("All 1s on minor diagonal column %d down/right\n", column);
+				subDiagonal = true;
+			}
+		}
 		// print if there were no sub-diagonals.
 		if (!subDiagonal)
 		{
