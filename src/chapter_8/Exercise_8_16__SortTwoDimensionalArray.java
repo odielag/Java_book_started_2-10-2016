@@ -17,7 +17,9 @@ import java.util.Arrays;
  * 
  * {{1, 1},{1, 2},{1, 7},{4, 1},{4, 2},{4, 5}}.
  * 
- * @author username
+ * @author William ODieLag Pennington
+ * @version 1.0
+ * @since 2016-6-26
  *
  */
 
