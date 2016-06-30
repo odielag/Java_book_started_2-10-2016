@@ -430,12 +430,19 @@ public class testing
 	    System.out.print(v);
 		*/
 		
+		/*
 		int[][] array = {
 				{5, 4, 3},
 				{5, 4, 1},
 				{5, 4, 3},
 		};
 		System.out.println(Arrays.toString(array[0]).compareTo(Arrays.toString(array[1])));
+		*/
+		
+		//char[] yo = new char[1];
+		//System.out.println(yo[0] == '\u0000');
+		//System.out.println('\u0021');
+		
 		
 	}
 
