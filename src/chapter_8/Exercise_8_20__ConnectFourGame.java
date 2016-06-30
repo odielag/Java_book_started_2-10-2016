@@ -15,7 +15,7 @@ import java.util.Scanner;
  * the console and determines the status of the game (win, draw, or continue).
  * 
  * @author William ODieLag Pennington
- * @version 0.1
+ * @version 1.0
  * @since 2016-6-26
  *
  */
