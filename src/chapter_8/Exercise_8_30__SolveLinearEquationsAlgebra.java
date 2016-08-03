@@ -21,7 +21,7 @@ prompts the user to enter a00 , a01 , a10 , a11 , b0 , and b1 , and displays the
 similar to Programming Exercise 3.3.
  * 
  * @author William ODieLag Pennington
- * @version 0.1
+ * @version 1.0
  * @since 2016-7-6
  *
  */
