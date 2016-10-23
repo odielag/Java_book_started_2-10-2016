@@ -446,7 +446,48 @@ public class testing
 		
 		//System.out.printf("%c", 'A' + 1);
 		
-				
+		//System.out.println(new Double(12.4).compareTo(new Double(12.3)));
+		
+		//Integer x = new Integer(3);
+		//System.out.println(x.intValue());
+		//System.out.println(x.compareTo(new Integer(4)));
+		
+		/*
+		System.out.println(Integer.parseInt("10"));
+		System.out.println(Integer.parseInt("10", 10));
+		System.out.println(Integer.parseInt("10", 16));
+		System.out.println(Integer.parseInt("11"));
+		System.out.println(Integer.parseInt("11", 10));
+		System.out.println(Integer.parseInt("11", 16));
+		*/
+		
+		//Double x = 3.5;
+		//System.out.println(x.intValue());
+		//System.out.println(x.compareTo(4.5));
+		
+		/*
+		String[] tokens = "Java#HTML#Perl").split("#");
+		for(int i = 0; i < tokens.length; i++)
+			System.out.print(tokens[i] + " ");
+		*/
+		
+		//String s = new String("s");
+		//System.out.println(s.length());
+		
+		/*
+		System.out.println("Hi, ABC, good".matches("ABC "));
+		System.out.println("Hi, ABC, good".matches(".*ABC.*"));
+		System.out.println("A,B;C".replaceAll(",;", "#"));
+		System.out.println("A,B;C".replaceAll("[,;]", "#"));
+		*/
+		
+		StringBuilder s1 = new StringBuilder("Jmva");
+		StringBuilder s2 = new StringBuilder("HTML");
+		
+		s1.delete(1, 3);
+		
+		System.out.println(s1.toString());
+		
 	}
 
 	/*

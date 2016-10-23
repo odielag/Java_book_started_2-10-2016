@@ -12,31 +12,48 @@ tion. Use the LinearEquation class in Programming Exercise 9.11 to solve this
 equation. See Programming Exercise 3.25 for sample runs.
  * 
  * @author William ODieLag Pennington
- * @version 0.1
+ * @version 1.0
  * @since 2016-8-22
  * 
  */
+
+
 
 public class Exercise_9_12__IntersectionPointGeometry
 {
 	public static void main(String[] args)
 	{
 		System.out.print("Enter x1, y1, x2, y2, x3, y3, x4, y4: ");
-		
+		Scanner input = new Scanner(System.in);
+		double x1 = input.nextDouble();
+		double y1 = input.nextDouble();
+		double x2 = input.nextDouble();
+		double y2 = input.nextDouble();
+		double x3 = input.nextDouble();
+		double y3 = input.nextDouble();
+		double x4 = input.nextDouble();
+		double y4 = input.nextDouble();
+		Exercise_9_12__IntersectionPointGeometry geometries = new Exercise_9_12__IntersectionPointGeometry(x1, y1, x2, y2, x3, y3, x4, y4);
+		System.out.println(geometries.output());
 	}
-}
 
-class IntersectingPointGeometry
-{
-	// input
-	private double x1, y1, x2, y2;		// Line one coords
-	private double x3, y3, x4, y4;		// Line two coords
-	private double x, y;				// coords of answer
-	private double a, b, c;				// Line one standard form
-	private double d, e, f;				// line two standard form
+
 	
-//This is the area that doesn't seem to be working vvv
-	public IntersectingPointGeometry(double x1, double y1, double x2, double y2, double x3, double y3, double x4, double y4)
+	// input
+	double x1, y1, x2, y2;		// Line one coords
+	double x3, y3, x4, y4;		// Line two coords
+	
+	double a = y1 - y2;
+	double b = -(x1 - x2);
+	double e = (y1 - y2) * x1 - (x1 - x2) * y1;
+	double c = (y3 - y4);
+	double d = -(x3 - x4);
+	double f = (y3 - y4) * x3 - (x3 - x4) * y3;
+	
+	double x = (e * d - b * f) / (a * d - b * c);
+	double y = (a * f - e * c) / (a * d - b * c);
+	
+	public Exercise_9_12__IntersectionPointGeometry(double x1, double y1, double x2, double y2, double x3, double y3, double x4, double y4)
 	{
 		this.x1 = x1;
 		this.y1 = y1;
@@ -47,26 +64,18 @@ class IntersectingPointGeometry
 		this.x4 = x4;
 		this.y4 = y4;
 	}
-	
-	
-	// processing
-	this.a = y1 - y2;
-	this.b = -(x1 - x2);
-	this.e = (y1 - y2) * x1 - (x1 - x2) * y1;
-	this.c = (y3 - y4);
-	this.d = -(x3 - x4);
-	this.f = (y3 - y4) * x3 - (x3 - x4) * y3;
 
 
-	
-	if (a * d - b * c == 0){
-		System.out.println("The two lines are parallel");
-		System.exit(0);
-	}
-	
-	x = (e * d - b * f) / (a * d - b * c);
-	y = (a * f - e * c) / (a * d - b * c);
 	
 	// output
-	System.out.printf("The intersecting point is at (%f, %f)\n", x, y);
+	public String output()
+	{
+		if (a * d - b * c == 0)
+			return "The two lines are parallel";
+		
+		else
+			return String.format("The intersecting point is at (%f, %f)\n", x, y);
+	}
+	
+
 }
