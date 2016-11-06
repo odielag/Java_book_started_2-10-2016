@@ -481,12 +481,13 @@ public class testing
 		System.out.println("A,B;C".replaceAll("[,;]", "#"));
 		*/
 		
+		/*
 		StringBuilder s1 = new StringBuilder("Jmva");
 		StringBuilder s2 = new StringBuilder("HTML");
-		
 		s1.delete(1, 3);
-		
 		System.out.println(s1.toString());
+		*/
+		
 		
 	}
 

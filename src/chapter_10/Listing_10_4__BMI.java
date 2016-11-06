@@ -9,6 +9,14 @@ public class Listing_10_4__BMI
 	public static final double KILOGRAMS_PER_POUND = 0.45359237;
 	public static final double METERS_PER_INCH = 0.0254;
 	
+	public Listing_10_4__BMI(String name, int age, double weight, double feet, double inches)
+	{
+		this.name = name;
+		this.age = age;
+		this.weight = weight;
+		this.height = feet * 12 + inches;
+	}
+	
 	public Listing_10_4__BMI(String name, int age, double weight, double height)
 	{
 		this.name = name;
